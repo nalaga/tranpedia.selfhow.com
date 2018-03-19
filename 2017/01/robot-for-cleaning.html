@@ -1,0 +1,1701 @@
+<!DOCTYPE html>
+<html dir='ltr' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+<head>
+<link href='https://www.blogger.com/static/v1/widgets/3957297643-widget_css_bundle.css' rel='stylesheet' type='text/css'/>
+<meta content='width=device-width' name='viewport'/>
+<meta content='text/html; charset=UTF-8' http-equiv='Content-Type'/>
+<meta content='blogger' name='generator'/>
+<link href='http://tranpedia.selfhow.com/favicon.ico' rel='icon' type='image/x-icon'/>
+<link href='http://tranpedia.selfhow.com/2017/01/robot-for-cleaning.html' rel='canonical'/>
+<link rel="alternate" type="application/atom+xml" title="TranPedia - Atom" href="http://tranpedia.selfhow.com/feeds/posts/default" />
+<link rel="alternate" type="application/rss+xml" title="TranPedia - RSS" href="http://tranpedia.selfhow.com/feeds/posts/default?alt=rss" />
+<link rel="service.post" type="application/atom+xml" title="TranPedia - Atom" href="https://www.blogger.com/feeds/2198118529220564780/posts/default" />
+
+<link rel="alternate" type="application/atom+xml" title="TranPedia - Atom" href="http://tranpedia.selfhow.com/feeds/525622790016538087/comments/default" />
+<!--Can't find substitution for tag [blog.ieCssRetrofitLinks]-->
+<link href='https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Roomba3g.jpg/200px-Roomba3g.jpg' rel='image_src'/>
+<meta content='http://tranpedia.selfhow.com/2017/01/robot-for-cleaning.html' property='og:url'/>
+<meta content='Robot for the cleaning' property='og:title'/>
+<meta content='Wikipedia Transation from Japanese To English' property='og:description'/>
+<meta content='https://lh6.googleusercontent.com/proxy/tJmodkJx709b7s7H4Qanm8wAkGiOIDh6Y9PzJcyGrGHyXy6cCSzx3TcU1GBy5sHW9KIOi2GGZYjXJY_B0gi7guORlBw_jANXe6stV_z3r3amyjinvA9_OWe_PsAfi-qb3UoG__O-eowNK-MuvA=w1200-h630-p-k-no-nu' property='og:image'/>
+<!--[if IE]> <script> (function() { var html5 = ("abbr,article,aside,audio,canvas,datalist,details," + "figure,footer,header,hgroup,mark,menu,meter,nav,output," + "progress,section,time,video").split(','); for (var i = 0; i < html5.length; i++) { document.createElement(html5[i]); } try { document.execCommand('BackgroundImageCache', false, true); } catch(e) {} })(); </script> <![endif]-->
+<link href='http://fonts.googleapis.com/css?family=Gloria+Hallelujah&ver=3.8-alpha' id='chalkboard-gloria-css' media='all' rel='stylesheet' type='text/css'/>
+<link href='http://fonts.googleapis.com/css?family=Roboto:400italic,700italic,400,700&subset=latin,latin-ext' id='chalkboard-roboto-css' media='all' rel='stylesheet' type='text/css'/>
+<!-- Start www.bloggertipandtrick.net: Changing the Blogger Title Tag -->
+<title>Robot for the cleaning ~ TranPedia</title>
+<!-- End www.bloggertipandtrick.net: Changing the Blogger Title Tag -->
+<!--[if lt IE 9]> <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script> <![endif]-->
+<style id='page-skin-1' type='text/css'><!--
+/*
+-----------------------------------------------
+Template Name  : Classic Chalkboard
+Author         : NewBloggerThemes.com
+Author URL     : http://newbloggerthemes.com/
+Theme URL      : http://newbloggerthemes.com/classic-chalkboard-blogger-template/
+Created Date   : Wednesday, October 30, 2013
+License        : This template is free for both personal and commercial use, But to satisfy the 'attribution' clause of the license, you are required to keep the footer links intact which provides due credit to its authors.For more information about this license, please use this link :http://creativecommons.org/licenses/by/3.0/
+----------------------------------------------- */
+body#layout ul{list-style-type:none;list-style:none}
+body#layout ul li{list-style-type:none;list-style:none}
+body#layout #content {}
+body#layout #slidearea {display:none;}
+body#layout #headbox{display:none;}
+/* Variable definitions
+====================
+*/
+/* Use this with templates/template-twocol.html */
+.section, .widget {
+margin:0;
+padding:0;
+}
+/*
+Resetting and rebuilding styles have been helped along thanks to the fine work of
+Eric Meyer http://meyerweb.com/eric/tools/css/reset/index.html
+along with Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
+and Blueprint http://www.blueprintcss.org/
+*/
+/* =Reset
+-------------------------------------------------------------- */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+border: 0;
+font-family: inherit;
+font-size: 100%;
+font-style: inherit;
+font-weight: inherit;
+margin: 0;
+outline: 0;
+padding: 0;
+vertical-align: baseline;
+}
+html {
+font-size: 62.5%; /* Corrects text resizing oddly in IE6/7 when body font-size is set using em units http://clagnut.com/blog/348/#c790 */
+overflow-y: scroll; /* Keeps page centred in all browsers regardless of content height */
+-webkit-text-size-adjust: 100%; /* Prevents iOS text size adjust after orientation change, without disabling user zoom */
+-ms-text-size-adjust: 100%; /* www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/ */
+}
+body, .body-fauxcolumn-outer {
+background: #fff;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section {
+display: block;
+}
+ol, ul {
+list-style: none;
+}
+table { /* tables still need 'cellspacing="0"' in the markup */
+border-collapse: separate;
+border-spacing: 0;
+}
+caption, th, td {
+font-weight: normal;
+text-align: left;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+content: "";
+}
+blockquote, q {
+quotes: "" "";
+}
+a:focus {
+outline: thin dotted;
+}
+a:hover,
+a:active { /* Improves readability when focused and also mouse hovered in all browsers people.opera.com/patrickl/experiments/keyboard/test */
+outline: 0;
+}
+a img {
+border: 0;
+}
+/* =Global
+----------------------------------------------- */
+body,
+button,
+input,
+select,
+textarea {
+font-family: 'Roboto', Arial, Helvetica, sans-serif;
+font-size: 20px;
+font-size: 2.0rem;
+line-height: 1.6;
+}
+body.sidebar-active {
+font-size: 20px;
+font-size: 2.0rem;
+}
+body, .body-fauxcolumn-outer {
+background: #f1eedc;
+color: #eee;
+}
+/* Headings */
+h1,h2,h3,h4,h5,h6 {
+clear: both;
+font-family: 'Gloria Hallelujah', Arial, Helvetica, sans-serif;
+margin: 1.3em 0 .3em;
+}
+h1 {
+font-size: 48px;
+font-size: 4.8rem;
+margin: 0 0 .3em;
+}
+h2 {
+font-size: 42px;
+font-size: 4.2rem;
+}
+h3 {
+font-size: 36px;
+font-size: 3.6rem;
+}
+h4 {
+font-size: 24px;
+font-size: 2.4rem;
+}
+h5 {
+font-size: 20px;
+font-size: 2.0rem;
+}
+h6 {
+font-size: 18px;
+font-size: 1.8rem;
+}
+hr {
+background-color: #ccc;
+border: 0;
+height: 1px;
+margin-bottom: 1.6em;
+}
+/* Text elements */
+p {
+margin-bottom: 1.6em;
+}
+ul, ol {
+margin: 0 0 1.6em 3em;
+}
+ul {
+list-style: disc;
+}
+ol {
+list-style: decimal;
+}
+ul ul, ol ol, ul ol, ol ul {
+margin-bottom: 0;
+margin-left: 1.6em;
+}
+dt {
+font-weight: bold;
+}
+dd {
+margin: 0 1.6em 1.6em;
+}
+b, strong {
+font-weight: bold;
+}
+dfn, cite, em, i {
+font-style: italic;
+}
+blockquote {
+border-left: 5px solid #f5f5f5;
+font-style: italic;
+margin: 0 1.6em;
+padding: 0 0 0 1.6em;
+}
+address {
+font-style: italic;
+margin: 0 0 1.6em;
+}
+pre {
+background: rgba(255,255,255,.2);
+font-family: "Courier 10 Pitch", Courier, monospace;
+font-size: 18px;
+font-size: 1.8rem;
+line-height: 1.6;
+margin-bottom: 1.6em;
+padding: 1em 1.6em;
+overflow: auto;
+max-width: 100%;
+}
+code, kbd, tt, var {
+font: 18px Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+}
+abbr, acronym {
+border-bottom: 1px dotted #666;
+cursor: help;
+}
+mark, ins {
+background: #fff9c0;
+color: #333;
+text-decoration: none;
+}
+sup,
+sub {
+font-size: 75%;
+height: 0;
+line-height: 0;
+position: relative;
+vertical-align: baseline;
+}
+sup {
+bottom: 1ex;
+}
+sub {
+top: .5ex;
+}
+small {
+font-size: 75%;
+}
+big {
+font-size: 125%;
+}
+figure {
+margin: 0;
+}
+table {
+margin: 0 0 1.6em;
+width: 100%;
+}
+td {
+padding: 5px 7px;
+}
+tr.alternate {
+background: rgba(255,255,255,.1);
+}
+th {
+border-bottom: 5px solid #f5f5f5;
+font-weight: bold;
+padding: 5px 7px;
+}
+button,
+input,
+select,
+textarea {
+font-size: 100%; /* Corrects font size not being inherited in all browsers */
+margin: 0; /* Addresses margins set differently in IE6/7, F3/4, S5, Chrome */
+vertical-align: baseline; /* Improves appearance and consistency in all browsers */
+*vertical-align: middle; /* Improves appearance and consistency in all browsers */
+}
+button,
+input {
+line-height: normal; /* Addresses FF3/4 setting line-height using !important in the UA stylesheet */
+*overflow: visible;  /* Corrects inner spacing displayed oddly in IE6/7 */
+}
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+border: 1px solid #ccc;
+border-color: #ccc #ccc #bbb #ccc;
+border-radius: 3px;
+background: #e6e6e6;
+-webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,0.5), inset 0 15px 17px rgba(255,255,255,0.5), inset 0 -5px 12px rgba(0,0,0,0.05);
+-moz-box-shadow: inset 0 1px 0 rgba(255,255,255,0.5), inset 0 15px 17px rgba(255,255,255,0.5), inset 0 -5px 12px rgba(0,0,0,0.05);
+box-shadow: inset 0 1px 0 rgba(255,255,255,0.5), inset 0 15px 17px rgba(255,255,255,0.5), inset 0 -5px 12px rgba(0,0,0,0.05);
+color: rgba(0,0,0,.8);
+cursor: pointer; /* Improves usability and consistency of cursor style between image-type 'input' and others */
+-webkit-appearance: button; /* Corrects inability to style clickable 'input' types in iOS */
+font-size: 12px;
+font-size: 1.4rem;
+line-height: 1;
+padding: .7em 1.6em .6em;
+text-shadow: 0 1px 0 rgba(255,255,255,.8);
+}
+button:hover,
+html input[type="button"]:hover,
+input[type="reset"]:hover,
+input[type="submit"]:hover {
+border-color: #ccc #bbb #aaa #bbb;
+-webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,0.8), inset 0 15px 17px rgba(255,255,255,0.8), inset 0 -5px 12px rgba(0,0,0,0.02);
+-moz-box-shadow: inset 0 1px 0 rgba(255,255,255,0.8), inset 0 15px 17px rgba(255,255,255,0.8), inset 0 -5px 12px rgba(0,0,0,0.02);
+box-shadow: inset 0 1px 0 rgba(255,255,255,0.8), inset 0 15px 17px rgba(255,255,255,0.8), inset 0 -5px 12px rgba(0,0,0,0.02);
+}
+button:focus,
+html input[type="button"]:focus,
+input[type="reset"]:focus,
+input[type="submit"]:focus,
+button:active,
+html input[type="button"]:active,
+input[type="reset"]:active,
+input[type="submit"]:active {
+border-color: #aaa #bbb #bbb #bbb;
+-webkit-box-shadow: inset 0 -1px 0 rgba(255,255,255,0.5), inset 0 2px 5px rgba(0,0,0,0.15);
+-moz-box-shadow: inset 0 -1px 0 rgba(255,255,255,0.5), inset 0 2px 5px rgba(0,0,0,0.15);
+box-shadow: inset 0 -1px 0 rgba(255,255,255,0.5), inset 0 2px 5px rgba(0,0,0,0.15);
+}
+input[type="checkbox"],
+input[type="radio"] {
+box-sizing: border-box; /* Addresses box sizing set to content-box in IE8/9 */
+padding: 0; /* Addresses excess padding in IE8/9 */
+}
+input[type="search"] {
+-webkit-appearance: textfield; /* Addresses appearance set to searchfield in S5, Chrome */
+-moz-box-sizing: content-box;
+-webkit-box-sizing: content-box; /* Addresses box sizing set to border-box in S5, Chrome (include -moz to future-proof) */
+box-sizing: content-box;
+}
+input[type="search"]::-webkit-search-decoration { /* Corrects inner padding displayed oddly in S5, Chrome on OSX */
+-webkit-appearance: none;
+}
+button::-moz-focus-inner,
+input::-moz-focus-inner { /* Corrects inner padding and border displayed oddly in FF3/4 www.sitepen.com/blog/2008/05/14/the-devils-in-the-details-fixing-dojos-toolbar-buttons/ */
+border: 0;
+padding: 0;
+}
+input[type=text],
+input[type=email],
+input[type=password],
+textarea {
+color: #666;
+border: 1px solid #ccc;
+border-radius: 3px;
+}
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=password]:focus,
+textarea:focus {
+color: #111;
+}
+input[type=text],
+input[type=email],
+input[type=password] {
+padding: 5px;
+position: relative;
+top: 3px;
+}
+textarea {
+overflow: auto; /* Removes default vertical scrollbar in IE6/7/8/9 */
+padding-left: 3px;
+vertical-align: top; /* Improves readability and alignment in all browsers */
+width: 98%;
+}
+/* Links */
+a {
+color: #fff;
+}
+a:visited {
+color: #fff;
+}
+a:hover,
+a:focus,
+a:active {
+color: #fff;
+}
+/* Alignment */
+.alignleft {
+display: inline;
+float: left;
+margin-right: 1.6em;
+margin-top: .8em;
+margin-bottom: .8em;
+}
+.alignright {
+display: inline;
+float: right;
+margin-left: 1.6em;
+margin-top: .8em;
+margin-bottom: .8em;
+}
+.aligncenter {
+clear: both;
+display: block;
+margin: .8em auto;
+}
+/* Text meant only for screen readers */
+.assistive-text {
+clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+clip: rect(1px, 1px, 1px, 1px);
+position: absolute !important;
+}
+/* =Layout
+----------------------------------------------- */
+#pagebwrap {
+background: #000 url('http://2.bp.blogspot.com/-A80lkNvsNUg/UnCKS_gy4iI/AAAAAAAALH4/fBNGe5OjwAo/s1600/chalk2.jpg') repeat;
+background-size: 360px auto;
+border-radius: 10px;
+display: block;
+box-shadow: 5px 5px 20px rgba(0,0,0,.5) inset;
+margin: 0 auto;
+padding: 15px 100px 5px;
+max-width: 960px;
+z-index: 10;
+}
+.wrapper {
+background: #855e42 url('http://2.bp.blogspot.com/-4uPv-bCyM1Y/UnCJh0DlmUI/AAAAAAAALHk/kvDStLoVuz8/s1600/woodtexture.jpg');
+background-size: 225px auto;
+border-radius: 10px;
+box-shadow: 5px 2px 15px rgba(0,0,0,.4);
+display: block;
+margin: 40px auto;
+max-width: 1170px;
+padding: 40px;
+}
+#main:before,
+#main:after {
+content: "";
+display: table;
+}
+#main:after {
+clear: both;
+}
+#primary {
+float: none;
+margin: 0;
+}
+.sidebar-active #primary {
+float: left;
+margin: 0 -25% 0 0;
+width: 100%;
+}
+#content,
+body.page-template-nosidebar-page-php #content,
+body.single-attachment #content {
+margin: 0;
+}
+.sidebar-active #content {
+margin: 0 35% 0 0;
+}
+#secondary { /* Sidebar 1 */
+float: right;
+overflow: hidden;
+width: 25%;
+}
+#tertiary { /* Footer sidebars */
+clear: both;
+}
+.site-footer {
+clear: both;
+width: 100%;
+}
+#colophon {
+background: url('http://1.bp.blogspot.com/-HKu0rscguYo/UnCIrezPUpI/AAAAAAAALHA/VuK3mvmn_6s/s1600/boardbottom-new.png') no-repeat center bottom;
+background-size: 100%;
+clear: both;
+display: block;
+font-family: 'Gloria Hallelujah', Arial, Helvetica, sans-serif;
+font-size: 16px;
+font-size: 1.6rem;
+margin: 50px auto -8px;
+max-width: 800px;
+text-align: center;
+width: 100%;
+min-height: 126px;
+}
+/* =Header
+----------------------------------------------- */
+#masthead {
+font-family: 'Gloria Hallelujah', Arial, Helvetica, sans-serif;
+margin: 0 0 3.2em;
+}
+#masthead:before,
+#masthead:after {
+content: "";
+display: table;
+}
+#masthead:after {
+clear: both;
+}
+#masthead img {
+display: block;
+margin: 15px auto;
+}
+.site-title {
+font-size: 250%;
+font-weight: bold;
+line-height: 1.25;
+margin: .67em 0 5px;
+text-align: center;
+text-decoration: none;
+text-transform: uppercase;
+}
+.site-title a {
+color: #fff;
+text-decoration: none;
+}
+.site-description {
+font-size: 24px;
+font-size: 2.4rem;
+font-weight: normal;
+margin: 0 0 1.6em;
+text-align: center;
+}
+/* =Menu
+----------------------------------------------- */
+.main-navigation {
+clear: both;
+display: block;
+float: left;
+text-align: center;
+width: 100%;
+}
+.main-navigation ul {
+list-style: none;
+margin: 0;
+padding-left: 0;
+}
+.main-navigation li {
+display: inline;
+position: relative;
+}
+.main-navigation a {
+display: inline-block;
+font-size: 19px;
+font-size: 1.9rem;
+line-height: 2em;
+padding: 3px 1em;
+text-align: center;
+text-decoration: none;
+}
+.main-navigation ul ul {
+background: url('http://1.bp.blogspot.com/-fEmJpRZ5E6U/UnCIpwOlVsI/AAAAAAAALG4/uJLT5UDUDyQ/s1600/chalk.png');
+border: 5px solid #f5f5f5;
+border-radius: 5px;
+-moz-box-shadow: 0 3px 3px rgba(0,0,0,0.2);
+-webkit-box-shadow: 0 3px 3px rgba(0,0,0,0.2);
+box-shadow: 0 3px 3px rgba(0,0,0,0.2);
+display: none;
+float: left;
+position: absolute;
+top: 1.6em;
+left: 0;
+z-index: 99999;
+}
+.main-navigation ul ul ul {
+left: 100%;
+top: -6px;
+}
+.main-navigation ul ul a {
+line-height: 1.5;
+text-align: left;
+width: 170px;
+}
+.main-navigation ul ul li {
+}
+.main-navigation li:hover > a {
+opacity: .8;
+}
+.main-navigation ul ul :hover > a {
+}
+.main-navigation ul ul a:hover {
+}
+.main-navigation ul li:hover > ul {
+display: block;
+}
+.main-navigation li.current_page_item a,
+.main-navigation li.current-menu-item a {
+text-decoration: underline;
+}
+/* Small menu */
+.menu-toggle {
+border: 5px solid #fff;
+border-radius: 10px;
+cursor: pointer;
+display: block;
+font-family: "Gloria Hallelujah", Arial, Helvetica, sans-serif;
+font-size: 20px;
+font-size: 2.0rem;
+margin: 0 auto;
+text-align: center;
+width: 125px;
+}
+.main-small-navigation .menu {
+display: none;
+}
+/* =Content
+----------------------------------------------- */
+.sticky.hentry {
+border: 1px solid #f5f5f5;
+border-radius: 15px;
+margin: 0 0 1.6em;
+padding: 30px;
+}
+.sticky.hentry:after,
+.archive .hentry:last-of-type:after,
+.search .hentry:last-of-type:after {
+display: none;
+}
+.hentry {
+margin: 0;
+}
+.hentry:after,
+#tertiary:before {
+background: url('http://1.bp.blogspot.com/-apHpvA6HWu0/UnCJe_DUcWI/AAAAAAAALHQ/EATAIrMRUlE/s1600/postseparator2.png') no-repeat center bottom;
+background-size: 335px auto;
+clear: both;
+content: "";
+display: block;
+margin: 0 0 1.6em;
+width: 100%;
+height: 85px;
+}
+.entry-title {
+font-size: 41px;
+font-size: 4.1rem;
+line-height: 1.2;
+text-align: center;
+margin: 0.5em 0 0.3em;
+}
+.entry-title a {
+text-decoration: none;
+}
+.entry-content {
+font-family: "Roboto", Arial, Helvetica, sans-serif;
+overflow: hidden;
+}
+.entry-meta {
+clear: both;
+color: rgba(255,255,255,.9);
+font-family: 'Gloria Hallelujah', Arial, Helvetica, sans-serif;
+font-size: 18px;
+font-size: 1.8rem;
+font-style: italic;
+text-align: center;
+margin-top: 15px;
+}
+.entry-meta a {
+color: rgba(255,255,255,.9);
+}
+.byline {
+display: none;
+}
+.single .byline,
+.group-blog .byline {
+display: inline;
+}
+.entry-content,
+.entry-summary {
+margin: 1.6em 0 0;
+}
+.page-links {
+clear: both;
+margin: 0 0 1.6em;
+}
+.page-title {
+font-size: 24px;
+font-size: 2.4rem;
+margin: 0 0 1.6em;
+}
+.single-attachment .attachment img {
+display: block;
+margin: 0 auto;
+}
+.single-attachment .entry-caption {
+text-align: center;
+}
+/* =Post Formats
+----------------------------------------------- */
+.format-link .entry-title {
+display: none;
+}
+/* =Media
+----------------------------------------------- */
+.site-header img,
+.entry-content img,
+.comment-content img,
+.widget img {
+max-width: 100%; /* Fluid images for posts, comments, and widgets */
+}
+.site-header img,
+.entry-content img,
+.comment-content img[height],
+img[class*="align"],
+img[class*="wp-image-"],
+.widget img {
+height: auto; /* Make sure images with WordPress-added height and width attributes are scaled correctly */
+}
+.site-header img,
+.entry-content img,
+img.size-full {
+max-width: 100%;
+}
+/* Make sure embeds and iframes fit their containers */
+embed,
+iframe,
+object {
+max-width: 100%;
+}
+/* =Navigation
+----------------------------------------------- */
+#nav-above {
+display: none;
+}
+.site-content .site-navigation {
+margin: 1.6em 0;
+overflow: hidden;
+}
+.site-content .site-navigation a {
+font-family: "Gloria Hallelujah", Arial, Helvetica, sans-serif;
+text-decoration: none;
+}
+.site-content .nav-previous {
+float: left;
+width: 50%;
+}
+.site-content .nav-next,
+.next-image {
+float: right;
+text-align: right;
+width: 50%;
+}
+/* =Widgets
+----------------------------------------------- */
+#tertiary:before,
+#tertiary:after {
+content: "";
+display: table;
+}
+#tertiary:after {
+clear: both;
+}
+.widget-left,
+.widget-middle,
+.widget-right {
+float: left;
+margin-right: 5%;
+overflow: hidden;
+width: 30%;
+}
+.widget-right {
+margin-right: 0;
+}
+.sidebar .widget {
+font-family: "Roboto", Arial, Helvetica, sans-serif;
+font-size: 16px;
+font-size: 1.6rem;
+margin: 0 0 1.6em;
+}
+.widget-title {
+font-family: "Gloria Hallelujah", Arial, Helvetica, sans-serif;
+font-size: 24px;
+font-size: 2.4rem;
+}
+.sidebar .widget h2 {
+font-family: "Gloria Hallelujah", Arial, Helvetica, sans-serif;
+font-size: 24px;
+font-size: 2.4rem;
+}
+.sidebar .widget-content{
+margin:0px;
+padding:0px;
+}
+.sidebar ul{
+margin:0px 0px 0px 24px;
+padding:0px;
+}
+.sidebar ul li{
+padding:5px 0px;
+margin:0px;
+border-bottom:0px solid #eeeeee;
+}
+/* Make sure select elements fit in widgets */
+.sidebar .widget select {
+max-width: 100%;
+}
+/* Search widget */
+#searchsubmit {
+display: none;
+}
+/* =Retina Media Queries
+----------------------------------------------- */
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (-moz-min-device-pixel-ratio: 2),
+only screen and (-o-min-device-pixel-ratio: 2/1),
+only screen and (min-device-pixel-ratio: 2) {
+#colophon {
+background: url('http://2.bp.blogspot.com/-y13MmUYRb8c/UnCJhYXfrbI/AAAAAAAALHg/FbQ8MDfSNYU/s1600/boardbottom-new-2x.png') no-repeat center bottom;
+background-size: 100%;
+}
+}
+/* =Responsive Media Queries
+----------------------------------------------- */
+@media only screen and ( max-width: 900px ) {
+.widget-left,
+.widget-middle,
+.widget-right,
+#secondary {
+clear: both;
+float: none;
+margin: 0;
+width: 100%;
+}
+.sidebar-active #content {
+margin: 0;
+}
+}
+@media only screen and ( max-width: 800px ) {
+body, .body-fauxcolumn-outer {
+font-size: 18px;
+font-size: 1.8rem;
+}
+.wrapper {
+padding: 20px;
+}
+#pagebwrap {
+padding: 30px 30px 0;
+}
+.entry-title {
+font-size: 28px;
+font-size: 2.8rem;
+}
+.site-title {
+font-size: 36px;
+font-size: 3.6rem;
+}
+#colophon,
+.entry-meta,
+.entry-content {
+font-size: 14px;
+font-size: 1.4rem;
+}
+#colophon {
+max-width: 100%;
+}
+}
+h2.date-header {
+margin: 1.5em 0 .5em;
+display: none;
+}
+.main .widget {
+margin: 0 0 5px;
+padding: 0 0 2px;
+}
+.main .Blog {
+border-bottom-width: 0;
+}
+#header .description {
+color:#ffffff;
+font-size:14px;
+text-shadow:0px 1px 0px #000000;
+}
+/* Comments----------------------------------------------- */
+#comments {
+padding:10px;
+margin-bottom:20px;
+}
+#comments h4 {
+font-size:22px;
+margin-bottom:10px;
+}
+.deleted-comment {
+font-style: italic;
+color: gray;
+}
+#blog-pager-newer-link {
+float: left;
+}
+#blog-pager-older-link {
+float: right;
+}
+#blog-pager {
+text-align: center;
+padding:5px;
+}
+.feed-links {
+clear: both;
+}
+.comment-form {
+max-width: 600px;
+}
+#navbar-iframe {
+height: 0;
+visibility: hidden;
+display: none;
+}
+.PopularPosts .widget-content ul li {
+padding:6px 0px;
+}
+.reaction-buttons table{
+border:none;
+margin-bottom:5px;
+}
+.reaction-buttons table, .reaction-buttons td{
+border:none;
+}
+.bthumbimg {
+float:left;
+margin:0px 10px 5px 0px;
+background:none;
+padding:3px;
+border:1px solid #eee;
+}
+
+--></style>
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js' type='text/javascript'></script>
+<script type='text/javascript'>
+//<![CDATA[
+
+/*! jQuery Migrate v1.2.1 | (c) 2005, 2013 jQuery Foundation, Inc. and other contributors | jquery.org/license */
+jQuery.migrateMute===void 0&&(jQuery.migrateMute=!0),function(e,t,n){function r(n){var r=t.console;i[n]||(i[n]=!0,e.migrateWarnings.push(n),r&&r.warn&&!e.migrateMute&&(r.warn("JQMIGRATE: "+n),e.migrateTrace&&r.trace&&r.trace()))}function a(t,a,i,o){if(Object.defineProperty)try{return Object.defineProperty(t,a,{configurable:!0,enumerable:!0,get:function(){return r(o),i},set:function(e){r(o),i=e}}),n}catch(s){}e._definePropertyBroken=!0,t[a]=i}var i={};e.migrateWarnings=[],!e.migrateMute&&t.console&&t.console.log&&t.console.log("JQMIGRATE: Logging is active"),e.migrateTrace===n&&(e.migrateTrace=!0),e.migrateReset=function(){i={},e.migrateWarnings.length=0},"BackCompat"===document.compatMode&&r("jQuery is not compatible with Quirks Mode");var o=e("<input/>",{size:1}).attr("size")&&e.attrFn,s=e.attr,u=e.attrHooks.value&&e.attrHooks.value.get||function(){return null},c=e.attrHooks.value&&e.attrHooks.value.set||function(){return n},l=/^(?:input|button)$/i,d=/^[238]$/,p=/^(?:autofocus|autoplay|async|checked|controls|defer|disabled|hidden|loop|multiple|open|readonly|required|scoped|selected)$/i,f=/^(?:checked|selected)$/i;a(e,"attrFn",o||{},"jQuery.attrFn is deprecated"),e.attr=function(t,a,i,u){var c=a.toLowerCase(),g=t&&t.nodeType;return u&&(4>s.length&&r("jQuery.fn.attr( props, pass ) is deprecated"),t&&!d.test(g)&&(o?a in o:e.isFunction(e.fn[a])))?e(t)[a](i):("type"===a&&i!==n&&l.test(t.nodeName)&&t.parentNode&&r("Can't change the 'type' of an input or button in IE 6/7/8"),!e.attrHooks[c]&&p.test(c)&&(e.attrHooks[c]={get:function(t,r){var a,i=e.prop(t,r);return i===!0||"boolean"!=typeof i&&(a=t.getAttributeNode(r))&&a.nodeValue!==!1?r.toLowerCase():n},set:function(t,n,r){var a;return n===!1?e.removeAttr(t,r):(a=e.propFix[r]||r,a in t&&(t[a]=!0),t.setAttribute(r,r.toLowerCase())),r}},f.test(c)&&r("jQuery.fn.attr('"+c+"') may use property instead of attribute")),s.call(e,t,a,i))},e.attrHooks.value={get:function(e,t){var n=(e.nodeName||"").toLowerCase();return"button"===n?u.apply(this,arguments):("input"!==n&&"option"!==n&&r("jQuery.fn.attr('value') no longer gets properties"),t in e?e.value:null)},set:function(e,t){var a=(e.nodeName||"").toLowerCase();return"button"===a?c.apply(this,arguments):("input"!==a&&"option"!==a&&r("jQuery.fn.attr('value', val) no longer sets properties"),e.value=t,n)}};var g,h,v=e.fn.init,m=e.parseJSON,y=/^([^<]*)(<[\w\W]+>)([^>]*)$/;e.fn.init=function(t,n,a){var i;return t&&"string"==typeof t&&!e.isPlainObject(n)&&(i=y.exec(e.trim(t)))&&i[0]&&("<"!==t.charAt(0)&&r("$(html) HTML strings must start with '<' character"),i[3]&&r("$(html) HTML text after last tag is ignored"),"#"===i[0].charAt(0)&&(r("HTML string cannot start with a '#' character"),e.error("JQMIGRATE: Invalid selector string (XSS)")),n&&n.context&&(n=n.context),e.parseHTML)?v.call(this,e.parseHTML(i[2],n,!0),n,a):v.apply(this,arguments)},e.fn.init.prototype=e.fn,e.parseJSON=function(e){return e||null===e?m.apply(this,arguments):(r("jQuery.parseJSON requires a valid JSON string"),null)},e.uaMatch=function(e){e=e.toLowerCase();var t=/(chrome)[ \/]([\w.]+)/.exec(e)||/(webkit)[ \/]([\w.]+)/.exec(e)||/(opera)(?:.*version|)[ \/]([\w.]+)/.exec(e)||/(msie) ([\w.]+)/.exec(e)||0>e.indexOf("compatible")&&/(mozilla)(?:.*? rv:([\w.]+)|)/.exec(e)||[];return{browser:t[1]||"",version:t[2]||"0"}},e.browser||(g=e.uaMatch(navigator.userAgent),h={},g.browser&&(h[g.browser]=!0,h.version=g.version),h.chrome?h.webkit=!0:h.webkit&&(h.safari=!0),e.browser=h),a(e,"browser",e.browser,"jQuery.browser is deprecated"),e.sub=function(){function t(e,n){return new t.fn.init(e,n)}e.extend(!0,t,this),t.superclass=this,t.fn=t.prototype=this(),t.fn.constructor=t,t.sub=this.sub,t.fn.init=function(r,a){return a&&a instanceof e&&!(a instanceof t)&&(a=t(a)),e.fn.init.call(this,r,a,n)},t.fn.init.prototype=t.fn;var n=t(document);return r("jQuery.sub() is deprecated"),t},e.ajaxSetup({converters:{"text json":e.parseJSON}});var b=e.fn.data;e.fn.data=function(t){var a,i,o=this[0];return!o||"events"!==t||1!==arguments.length||(a=e.data(o,t),i=e._data(o,t),a!==n&&a!==i||i===n)?b.apply(this,arguments):(r("Use of jQuery.fn.data('events') is deprecated"),i)};var j=/\/(java|ecma)script/i,w=e.fn.andSelf||e.fn.addBack;e.fn.andSelf=function(){return r("jQuery.fn.andSelf() replaced by jQuery.fn.addBack()"),w.apply(this,arguments)},e.clean||(e.clean=function(t,a,i,o){a=a||document,a=!a.nodeType&&a[0]||a,a=a.ownerDocument||a,r("jQuery.clean() is deprecated");var s,u,c,l,d=[];if(e.merge(d,e.buildFragment(t,a).childNodes),i)for(c=function(e){return!e.type||j.test(e.type)?o?o.push(e.parentNode?e.parentNode.removeChild(e):e):i.appendChild(e):n},s=0;null!=(u=d[s]);s++)e.nodeName(u,"script")&&c(u)||(i.appendChild(u),u.getElementsByTagName!==n&&(l=e.grep(e.merge([],u.getElementsByTagName("script")),c),d.splice.apply(d,[s+1,0].concat(l)),s+=l.length));return d});var Q=e.event.add,x=e.event.remove,k=e.event.trigger,N=e.fn.toggle,T=e.fn.live,M=e.fn.die,S="ajaxStart|ajaxStop|ajaxSend|ajaxComplete|ajaxError|ajaxSuccess",C=RegExp("\\b(?:"+S+")\\b"),H=/(?:^|\s)hover(\.\S+|)\b/,A=function(t){return"string"!=typeof t||e.event.special.hover?t:(H.test(t)&&r("'hover' pseudo-event is deprecated, use 'mouseenter mouseleave'"),t&&t.replace(H,"mouseenter$1 mouseleave$1"))};e.event.props&&"attrChange"!==e.event.props[0]&&e.event.props.unshift("attrChange","attrName","relatedNode","srcElement"),e.event.dispatch&&a(e.event,"handle",e.event.dispatch,"jQuery.event.handle is undocumented and deprecated"),e.event.add=function(e,t,n,a,i){e!==document&&C.test(t)&&r("AJAX events should be attached to document: "+t),Q.call(this,e,A(t||""),n,a,i)},e.event.remove=function(e,t,n,r,a){x.call(this,e,A(t)||"",n,r,a)},e.fn.error=function(){var e=Array.prototype.slice.call(arguments,0);return r("jQuery.fn.error() is deprecated"),e.splice(0,0,"error"),arguments.length?this.bind.apply(this,e):(this.triggerHandler.apply(this,e),this)},e.fn.toggle=function(t,n){if(!e.isFunction(t)||!e.isFunction(n))return N.apply(this,arguments);r("jQuery.fn.toggle(handler, handler...) is deprecated");var a=arguments,i=t.guid||e.guid++,o=0,s=function(n){var r=(e._data(this,"lastToggle"+t.guid)||0)%o;return e._data(this,"lastToggle"+t.guid,r+1),n.preventDefault(),a[r].apply(this,arguments)||!1};for(s.guid=i;a.length>o;)a[o++].guid=i;return this.click(s)},e.fn.live=function(t,n,a){return r("jQuery.fn.live() is deprecated"),T?T.apply(this,arguments):(e(this.context).on(t,this.selector,n,a),this)},e.fn.die=function(t,n){return r("jQuery.fn.die() is deprecated"),M?M.apply(this,arguments):(e(this.context).off(t,this.selector||"**",n),this)},e.event.trigger=function(e,t,n,a){return n||C.test(e)||r("Global events are undocumented and deprecated"),k.call(this,e,t,n||document,a)},e.each(S.split("|"),function(t,n){e.event.special[n]={setup:function(){var t=this;return t!==document&&(e.event.add(document,n+"."+e.guid,function(){e.event.trigger(n,null,t,!0)}),e._data(this,n,e.guid++)),!1},teardown:function(){return this!==document&&e.event.remove(document,n+"."+e._data(this,n)),!1}}})}(jQuery,window);
+
+//]]>
+</script>
+<script type='text/javascript'>
+//<![CDATA[
+
+function showrecentcomments(json){for(var i=0;i<a_rc;i++){var b_rc=json.feed.entry[i];var c_rc;if(i==json.feed.entry.length)break;for(var k=0;k<b_rc.link.length;k++){if(b_rc.link[k].rel=='alternate'){c_rc=b_rc.link[k].href;break;}}c_rc=c_rc.replace("#","#comment-");var d_rc=c_rc.split("#");d_rc=d_rc[0];var e_rc=d_rc.split("/");e_rc=e_rc[5];e_rc=e_rc.split(".html");e_rc=e_rc[0];var f_rc=e_rc.replace(/-/g," ");f_rc=f_rc.link(d_rc);var g_rc=b_rc.published.$t;var h_rc=g_rc.substring(0,4);var i_rc=g_rc.substring(5,7);var j_rc=g_rc.substring(8,10);var k_rc=new Array();k_rc[1]="Jan";k_rc[2]="Feb";k_rc[3]="Mar";k_rc[4]="Apr";k_rc[5]="May";k_rc[6]="Jun";k_rc[7]="Jul";k_rc[8]="Aug";k_rc[9]="Sep";k_rc[10]="Oct";k_rc[11]="Nov";k_rc[12]="Dec";if("content" in b_rc){var l_rc=b_rc.content.$t;}else if("summary" in b_rc){var l_rc=b_rc.summary.$t;}else var l_rc="";var re=/<\S[^>]*>/g;l_rc=l_rc.replace(re,"");if(m_rc==true)document.write('On '+k_rc[parseInt(i_rc,10)]+' '+j_rc+' ');document.write('<a href="'+c_rc+'">'+b_rc.author[0].name.$t+'</a> commented');if(n_rc==true)document.write(' on '+f_rc);document.write(': ');if(l_rc.length<o_rc){document.write('<i>&#8220;');document.write(l_rc);document.write('&#8221;</i><br/><br/>');}else{document.write('<i>&#8220;');l_rc=l_rc.substring(0,o_rc);var p_rc=l_rc.lastIndexOf(" ");l_rc=l_rc.substring(0,p_rc);document.write(l_rc+'&hellip;&#8221;</i>');document.write('<br/><br/>');}}}
+
+function rp(json){document.write('<ul>');for(var i=0;i<numposts;i++){document.write('<li>');var entry=json.feed.entry[i];var posttitle=entry.title.$t;var posturl;if(i==json.feed.entry.length)break;for(var k=0;k<entry.link.length;k++){if(entry.link[k].rel=='alternate'){posturl=entry.link[k].href;break}}posttitle=posttitle.link(posturl);var readmorelink="(more)";readmorelink=readmorelink.link(posturl);var postdate=entry.published.$t;var cdyear=postdate.substring(0,4);var cdmonth=postdate.substring(5,7);var cdday=postdate.substring(8,10);var monthnames=new Array();monthnames[1]="Jan";monthnames[2]="Feb";monthnames[3]="Mar";monthnames[4]="Apr";monthnames[5]="May";monthnames[6]="Jun";monthnames[7]="Jul";monthnames[8]="Aug";monthnames[9]="Sep";monthnames[10]="Oct";monthnames[11]="Nov";monthnames[12]="Dec";if("content"in entry){var postcontent=entry.content.$t}else if("summary"in entry){var postcontent=entry.summary.$t}else var postcontent="";var re=/<\S[^>]*>/g;postcontent=postcontent.replace(re,"");document.write(posttitle);if(showpostdate==true)document.write(' - '+monthnames[parseInt(cdmonth,10)]+' '+cdday);if(showpostsummary==true){if(postcontent.length<numchars){document.write(postcontent)}else{postcontent=postcontent.substring(0,numchars);var quoteEnd=postcontent.lastIndexOf(" ");postcontent=postcontent.substring(0,quoteEnd);document.write(postcontent+'...'+readmorelink)}}document.write('</li>')}document.write('</ul>')}
+
+//]]>
+</script>
+<style id='custom-background-css' type='text/css'>
+body.custom-background { background-image: url('http://2.bp.blogspot.com/-oS920l1lAcQ/UnCJgDGqawI/AAAAAAAALHY/GRklHHyHTjM/s1600/walltexture.png'); background-repeat: repeat; background-position: top left; background-attachment: scroll; }
+</style>
+<link href='https://www.blogger.com/dyn-css/authorization.css?targetBlogID=2198118529220564780&amp;zx=94cca9dd-4719-43f6-a93e-60fe8f32fa96' media='none' onload='if(media!=&#39;all&#39;)media=&#39;all&#39;' rel='stylesheet'/><noscript><link href='https://www.blogger.com/dyn-css/authorization.css?targetBlogID=2198118529220564780&amp;zx=94cca9dd-4719-43f6-a93e-60fe8f32fa96' rel='stylesheet'/></noscript>
+</head>
+<body class='custom-background sidebar-active'>
+<div class='wrapper'>
+<div id='pagebwrap'>
+<header class='site-header' id='masthead' role='banner'>
+<div class='headersec section' id='headersec'><div class='widget Header' data-version='1' id='Header1'>
+<div id='header-inner'>
+<div class='titlewrapper'>
+<h1 class='site-title'>
+<a href='http://tranpedia.selfhow.com/'>TranPedia</a>
+</h1>
+</div>
+<div class='descriptionwrapper'>
+<h2 class='site-description'>Wikipedia Translation from Japanese to English</h2>
+</div>
+</div>
+</div></div>
+<nav class='site-navigation main-navigation' role='navigation'>
+<h1 class='assistive-text'>Menu</h1>
+<div class='assistive-text skip-link'><a href='#content' title='Skip to content'>Skip to content</a></div>
+</nav><!-- .site-navigation .main-navigation -->
+</header><!-- #masthead .site-header -->
+<div class='site-main' id='main'>
+<div class='content-area' id='primary'>
+<div class='site-content' id='content' role='main'>
+<div class='mainblogsec section' id='mainblogsec'><div class='widget Blog' data-version='1' id='Blog1'>
+<div class='blog-posts hfeed'>
+<!--Can't find substitution for tag [defaultAdStart]-->
+
+          <div class="date-outer">
+        
+<h2 class='date-header'><span>2017년 1월 21일 토요일</span></h2>
+
+          <div class="date-posts">
+        
+<div class='post-outer'>
+<article class='post hentry'>
+<a name='525622790016538087'></a>
+<header class='entry-header'>
+<h2 class='post-title entry-title'>
+<a href='http://tranpedia.selfhow.com/2017/01/robot-for-cleaning.html'>Robot for the cleaning</a>
+</h2>
+</header>
+<div class='post-header-line-1'></div>
+<div class='post-body entry-content'>
+ <div class='ads_adsense_response'> <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> <ins class="adsbygoogle"      style="display:block"      data-ad-client="ca-pub-8393857339019314"      data-ad-slot="1428352782"      data-ad-format="auto"></ins> <script> (adsbygoogle = window.adsbygoogle || []).push({}); </script> </div> <h1>Robot for the cleaning</h1><div class="content" id="bodyContent"><div class="mw-content-ltr" dir="ltr" id="mw-content-text" lang="ja"><script>function mfTempOpenSection(id){var block=document.getElementById("mf-section-"+id);block.className+=" open-block";block.previousSibling.className+=" open-block";}</script><div class="mf-section-0" id="mf-section-0"><p>A <b>cleaning robot</b> (cleansing robot) or the <b>robot vacuum cleaner</b> (a robot so soon) is the <a href="http://tranpedia.selfhow.com/search?q=robot&amp;submit=Search" title="Robot">robot</a> which it works automatically and <a href="http://tranpedia.selfhow.com/search?q=cleans&amp;submit=Search" title="Cleaning">cleans</a>. With the <b>robot for</b> a <b>robot cleaner</b> and the cleaning.<sup class="reference" id="cite_ref-1"><a href="http://tranpedia.selfhow.com/search?q=%20%5B1%5D&amp;submit=Search"> [1]</a></sup></p> <p></p> <div class="toc-mobile" id="toc"><h2>Table of contents</h2></div></div><h2 class="section-heading in-block" onclick="javascript:mfTempOpenSection(1)"><div class="mw-ui-icon mw-ui-icon-element indicator"></div><span class="mw-headline" id=".E6.A6.82.E8.A6.81">Summary</span> <span></span></h2><div class="mf-section-1 collapsible-block" id="mf-section-1"> <p>There are household use and duties use. A point changing autonomously is different from a conventional vacuum<a href="http://tranpedia.selfhow.com/search?q=%20cleaner&amp;submit=Search" title="Vacuum cleaner"> cleaner</a>.</p> <p>The things assuming that I clean such as a house, the office building are common, but there is the thing assuming pool cleaning.</p> </div><h2 class="section-heading in-block" onclick="javascript:mfTempOpenSection(2)"><div class="mw-ui-icon mw-ui-icon-element indicator"></div><span class="mw-headline" id=".E5.AE.B6.E5.BA.AD.E7.94.A8.E5.BA.8A.E6.8E.83.E9.99.A4.E3.83.AD.E3.83.9C.E3.83.83.E3.83.88">Home floor cleaning robot</span> <span></span></h2><div class="mf-section-2 collapsible-block" id="mf-section-2"> <div class="thumb tright"> <div class="thumbinner" style="width:202px;"><a class="image" href="http://tranpedia.selfhow.com/search?q=%C2%A0&amp;submit=Search"><noscript><img alt="" class="thumbimage" data-file-height="1348" data-file-width="2022" height="133" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Roomba3g.jpg/200px-Roomba3g.jpg" width="200"/></noscript><span class="lazy-image-placeholder" data-alt="" data-class="thumbimage" data-height="133" data-src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Roomba3g.jpg/200px-Roomba3g.jpg" data-width="200" style="width: 200px;height: 133px;">&#160;</span></a> <div class="thumbcaption"> <div class="magnify"><a class="internal" href="http://tranpedia.selfhow.com/search?q=&amp;submit=Search" title="Expansion"></a></div> Roomba <a href="http://tranpedia.selfhow.com/search?q=rumba&amp;submit=Search" title="Rumba (vacuum cleaner)">rumba</a> of iRobot company. I am proud of an overwhelming share.</div> </div> </div> <div class="thumb tright"> <div class="thumbinner" style="width:202px;"><a class="image" href="http://tranpedia.selfhow.com/search?q=%C2%A0&amp;submit=Search"><noscript><img alt="" class="thumbimage" data-file-height="2048" data-file-width="3072" height="133" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Electrolux_trilobite.jpg/200px-Electrolux_trilobite.jpg" width="200"/></noscript><span class="lazy-image-placeholder" data-alt="" data-class="thumbimage" data-height="133" data-src="//upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Electrolux_trilobite.jpg/200px-Electrolux_trilobite.jpg" data-width="200" style="width: 200px;height: 133px;">&#160;</span></a> <div class="thumbcaption"> <div class="magnify"><a class="internal" href="http://tranpedia.selfhow.com/search?q=&amp;submit=Search" title="Expansion"></a></div> "Trilobite 2.0 "of Swedish <a href="http://tranpedia.selfhow.com/search?q=Electrolux%20A&amp;submit=Search" title="AB Electrolux">Electrolux A</a>B</div> </div> </div> <div class="thumb tright"> <div class="thumbinner" style="width:202px;"><a class="image" href="http://tranpedia.selfhow.com/search?q=%C2%A0&amp;submit=Search"><noscript><img alt="" class="thumbimage" data-file-height="2448" data-file-width="3264" height="150" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Vorwerk_Kobold_VR100.JPG/200px-Vorwerk_Kobold_VR100.JPG" width="200"/></noscript><span class="lazy-image-placeholder" data-alt="" data-class="thumbimage" data-height="150" data-src="//upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Vorwerk_Kobold_VR100.JPG/200px-Vorwerk_Kobold_VR100.JPG" data-width="200" style="width: 200px;height: 150px;">&#160;</span></a> <div class="thumbcaption"> <div class="magnify"><a class="internal" href="http://tranpedia.selfhow.com/search?q=&amp;submit=Search" title="Expansion"></a></div> Coe bolt of forehand Berg Corporation. I do not miss the dust of the four corners of the room with "D" model either. It never comes true for a rumba in the share, but the evaluation of the user is high in the quality with a product made in Germany highly.</div> </div> </div> <p>I incorporate a <a class="mw-redirect" href="http://tranpedia.selfhow.com/search?q=charge%20pond&amp;submit=Search" title="Charge pond">charge pond</a> (battery) in the main body, and the household use <a class="new" href="http://tranpedia.selfhow.com/search?q=is%20cordle&amp;submit=Search" title="Cordless (the page that does not exist)">is cordle</a>ss during movement when I comment on a general type.</p> <p>It is the thing with the <a class="mw-redirect" href="http://tranpedia.selfhow.com/search?q=sensor&amp;submit=Search" title="Sensor">sensor</a> on the front side of the main body, and I gather earthly affairs in the main body undersurface with a pattern, a turning side brush in autonomy race before leaving, and absorption collects floor to collide, or to avoid furniture and a wall surface. Almost all models [<sup class="reference" id="cite_ref-2"><a href="http://tranpedia.selfhow.com/search?q=2&amp;submit=Search">2</a></sup>] sense the step such as the relationship of stairs by a sensor and avoid it, and there is not the dropping thing.</p> <p>The cheap thing continues running until battery runs out, but the things more than medium degree are controlled the operation of by a <a href="http://tranpedia.selfhow.com/search?q=timer&amp;submit=Search" title="Timer">timer</a> and when or it starts by button operation automatically and cleans the floor for a given period of time, it runs by itself in a oneself battery charger and comes back and comes to charge it for next start.</p> <p>From the relatively cheap thing which functions are different according to a price, and only only runs floor at random the front without coming to change direction when obstacles such as the furniture hit a lateral physical contact sensor (with "コツン" and "a whump"), and recognizing the cleaning route in thing which slow down before measuring distance with the furniture by a distance sensor (non-contact type), and touching it, and evades contact using <a href="http://tranpedia.selfhow.com/search?q=supersonic%20waves&amp;submit=Search" title="Supersonic wave">supersonic waves</a>,, besides, recognizing the geometric pattern of the ceiling with a camera of the room manufacture a map (the floor), and recognize the position in the room of the own plane in AI, and there is the model high-priced as possible high efficiency to let avoid it, and shorten cleaning time (a little) by the overlap cleaning of the equivalence place. I comprise a mop depending on a model, and water wiping and the <a class="mw-disambig" href="http://tranpedia.selfhow.com/search?q=waxi&amp;submit=Search" title="Wax">waxi</a>ng are possible, too.</p> <p>The home price range is six or seven around 1000-70,000 yen at WEB price (at December, 2012), but, as for the low-priced model, there are many things specializing in a basic function of the cleaning. The high-priced thing is many functions, and there is the thing which the schedule function to start automatically at the designated time of the designated day comprises every week.</p> <p>As for the external form of the main body, most are thin disk types from 25cm in diameter to around 38cm.<sup class="reference" id="cite_ref-3"><a href="http://tranpedia.selfhow.com/search?q=%20%5B3%5D&amp;submit=Search"> [3]</a></sup>&#12288;But, about a disk-shaped shape, only as for the just several class, there is an exception; the Coe bolt of German forehand Berg Corporation "D form" [<sup class="reference" id="cite_ref-4"><a href="http://tranpedia.selfhow.com/search?q=4&amp;submit=Search">4</a></sup>], Lou Roe of Panasonic a triangle (is because miss the dust of the four corners of the room which disk form assumes a weak point neither).</p> <h3 class="in-block"><span class="mw-headline" id=".E6.AD.B4.E5.8F.B2">History</span> <span></span></h3> <p>The traditional major household appliance company does not give the robot vacuum cleaner at first, and there is the history that realized commodification in the form that <a href="http://tranpedia.selfhow.com/search?q=iRobot&amp;submit=Search" title="IRobot">iRobot</a> of the venture company and a North European maker bury a <a href="http://tranpedia.selfhow.com/search?q=niche&amp;submit=Search" title="Niche">niche</a> in.</p> <dl><dt>Stage of trial manufacture and the demonstration in the world</dt> </dl><p>"A <a class="new" href="http://tranpedia.selfhow.com/search?q=cleaner%20shark&amp;submit=Search" title="Cleaner shark (the page that does not exist)">cleaner shark</a>" equipped with the internal combustion engine which assumed methyl alcohol fuel in the <a href="http://tranpedia.selfhow.com/search?q=cotton%20rose&amp;submit=Search" title="Fuyo group">cotton rose</a> robot theater of the <a class="mw-redirect" href="http://tranpedia.selfhow.com/search?q=Tsukuba%20international%20science%20and%20technology%20exposition&amp;submit=Search" title="Tsukuba international science and technology exposition">Tsukuba international science and technology exposition</a> held in 1985 was displayed.</p> <p>The Maekawa and others of the SANYO Electric Co., Ltd. technology development headquarters want to develop a practical robot playing an active part in the life space not a factory in 1986 and become independent (will of "the autonomy"?) I completed the prototype of the cleaning robot which could run. At size called 500mm (W) x 500mm (D) x 700mm (H), it was what's called of the weight 20 kg [<sup class="reference" id="cite_ref-5"><a href="http://tranpedia.selfhow.com/search?q=5&amp;submit=Search">5</a></sup>].</p> <p>American <a href="http://tranpedia.selfhow.com/search?q=iRobot&amp;submit=Search" title="IRobot">iRobot</a> company announced prototype "early prototype" of Roomba (<a href="http://tranpedia.selfhow.com/search?q=rumba&amp;submit=Search" title="Rumba (vacuum cleaner)">rumba</a>) in 1997 (<sup class="reference" id="cite_ref-6"><a href="http://tranpedia.selfhow.com/search?q=%5B6%5D&amp;submit=Search">[6]</a></sup> that it is later September 17, 2002 that I manufacture it and am really jumped into fame in the United States).</p> <p>In 2001, <a href="http://tranpedia.selfhow.com/search?q=die%20loss&amp;submit=Search" title="Die loss (company)">die loss</a> of the U.K. gave a demonstration of the prototype of the robot for the cleaning called DC06, but was not made a marketing product because cost was high [<sup class="reference" id="cite_ref-7"><a href="http://tranpedia.selfhow.com/search?q=7&amp;submit=Search">7</a></sup>].</p> <p>In <a href="http://tranpedia.selfhow.com/search?q=Panasonic&amp;submit=Search" title="Panasonic">Panasonic</a>, Hitachi announced the demonstration machine of the robot vacuum cleaner (but is only a later thing than トリロバイト release of Electrolux AB of 2001 that is the first commercial home robot vacuum cleaner to mention later for your information) in May, 2003 in March, 2002 [<sup class="reference" id="cite_ref-8"><a href="http://tranpedia.selfhow.com/search?q=8&amp;submit=Search">8</a></sup>]; [<sup class="reference" id="cite_ref-9"><a href="http://tranpedia.selfhow.com/search?q=9&amp;submit=Search">9</a></sup>]. The prototype of Panasonic was an automatic cleaning robot for standard home equipped with a pro-security and pro-dust collection sensor for the first time in the world.</p> <dl><dt>Commercial start in the world</dt> </dl><p>The <b>world's first commercial home robot vacuum cleaner</b> is "<b><a class="extiw" href="http://tranpedia.selfhow.com/search?q=%E3%83%88%E3%83%AA%E3%83%AD%E3%83%90%E3%82%A4%E3%83%88&amp;submit=Search" title="en:Electrolux Trilobite">トリロバイト</a></b>" which <u><a href="http://tranpedia.selfhow.com/search?q=Swedis&amp;submit=Search" title="Sweden">Swedis</a>h <a href="http://tranpedia.selfhow.com/search?q=Electrolux%20A&amp;submit=Search" title="AB Electrolux">Electrolux A</a>B released in Europe in <a href="http://tranpedia.selfhow.com/search?q=November%2C&amp;submit=Search" title="2001">November,</a> 2001</u>. (in addition, <sup class="reference" id="cite_ref-10"><a href="http://tranpedia.selfhow.com/search?q=%5B10%5D&amp;submit=Search">[10]</a></sup> that <a href="http://tranpedia.selfhow.com/search?q=prototypic&amp;submit=Search" title="Prototype">prototypic</a> plane of Trilobite (<a class="mw-redirect" href="http://tranpedia.selfhow.com/search?q=protot&amp;submit=Search" title="Trial manufacture">protot</a>ype) was featured in program <a class="extiw" href="http://tranpedia.selfhow.com/search?q=en%3ATomorrow%27s%20World&amp;submit=Search" title="en:Tomorrow's World">en:Tomorrow's World</a> of the <a href="http://tranpedia.selfhow.com/search?q=BBC&amp;submit=Search" title="British Broadcasting Corporation">BBC</a> in 1997.)</p> <p><a href="http://tranpedia.selfhow.com/search?q=iRobot&amp;submit=Search" title="IRobot">iRobot</a> company releases Roomba in the United States on <a href="http://tranpedia.selfhow.com/search?q=September&amp;submit=Search" title="2002">September</a> 17, 2002. <a href="http://tranpedia.selfhow.com/search?q=German&amp;submit=Search" title="Germany">German</a> company <a href="http://tranpedia.selfhow.com/search?q=%E3%82%B1%E3%83%AB%E3%83%92%E3%83%A3%E3%83%BC&amp;submit=Search" title="ケルヒャー">ケルヒャー</a> began to sell "RC3000" in Europe in September in the same year, too. The one of Roomba increases a <a class="mw-disambig" href="http://tranpedia.selfhow.com/search?q=share&amp;submit=Search" title="Share">share</a> afterwards, and it is said that I sold higher than 600,000 in Japan more than 8 million totals throughout the world as of 2013 [<sup class="reference" id="cite_ref-11"><a href="http://tranpedia.selfhow.com/search?q=11&amp;submit=Search">11</a></sup>].</p> <p>In the Japanese company, the <a href="http://tranpedia.selfhow.com/search?q=CCP&amp;submit=Search" title="CCP">CCP</a> (CCP) company which was a subsidiary of <a href="http://tranpedia.selfhow.com/search?q=BANDAI&amp;submit=Search" title="BANDAI">BANDAI</a> started the sale of "the SO-Zi premium" in December, 2007, and "LAQULITO <a class="new" href="http://tranpedia.selfhow.com/search?q=comfortable%20lied&amp;submit=Search" title="Comfortable lied (the page that does not exist)">comfortable lied</a>" for the function improvement on (September 9) was released as a substitute model in September, 2011.<sup class="reference" id="cite_ref-12"><a href="http://tranpedia.selfhow.com/search?q=%20%5B12%5D&amp;submit=Search"> [12]</a></sup>.</p> <p><a class="mw-redirect" href="http://tranpedia.selfhow.com/search?q=Korean&amp;submit=Search" title="Korea">Korean</a> <a class="mw-disambig" href="http://tranpedia.selfhow.com/search?q=Samsung&amp;submit=Search" title="Samsung">Samsung</a> releases "SR9630" in 2009.</p> <p>In <a href="http://tranpedia.selfhow.com/search?q=Sharp&amp;submit=Search" title="Sharp">Sharp</a>, 2 models release "the <a href="http://tranpedia.selfhow.com/search?q=here%20Robo&amp;submit=Search" title="Here Robo (vacuum cleaner)">here Robo</a>" (COCOROBO) with the conversation function in June, 2012. When I am about to tell you that the here Robo cleans "I am hard" if quantity of the garbage becomes full of the <a href="http://tranpedia.selfhow.com/search?q=artificial%20intelligence&amp;submit=Search" title="Artificial intelligence">artificial intelligence</a> deployment that I developed originally, "I knew it", and "おっとっと" announces it with and "I help me" when there is a step if charge becomes short.<a href="http://tranpedia.selfhow.com/search?q=%20There%20is%20the%20model%20which%20can%20identify%20the%20indoor%20photograph%20which%20the%20model%20which%20a%20plasma%20cluster&amp;submit=Search" title="Plasma cluster"> There is the model which can identify the indoor photograph which the model which a plasma cluster</a> is put on and a main body incorporation camera photographed with a smartphone from the whereabouts. It was not in Japanese standard language and coped with English, Chinese depending on Kansai dialect, a model, and the here Robo was released for global market.</p> <p>In the world, <a class="extiw" href="http://tranpedia.selfhow.com/search?q=Shah%20soft-headed%20image&amp;submit=Search" title="en:The Sharper Image">Shah soft-headed image</a> Corporation with the head office starts a robot vacuum cleaner in <a href="http://tranpedia.selfhow.com/search?q=San%20Francisco&amp;submit=Search" title="San Francisco">San Francisco</a> <a class="extiw" href="http://tranpedia.selfhow.com/search?q=Neato%20Robotics&amp;submit=Search" title="en:Neato Robotics">Neato Robotics</a> company with the head office in the <a href="http://tranpedia.selfhow.com/search?q=Silicon%20Valley&amp;submit=Search" title="Silicon Valley">Silicon Valley</a> as an American company. I am eager in housework, and there are many prominent housewives ("a super housewife"), and, in Germany where a strict third party goods test is prosperous, a product of forehand Berg Corporation boasts of approval rating No. 1 of the housewife. A product of the South Korean company includes "Roboking" (in Japan the product name called "a home bot") of <a class="mw-disambig" href="http://tranpedia.selfhow.com/search?q=LG&amp;submit=Search" title="LG">LG</a>, <a class="new" href="http://tranpedia.selfhow.com/search?q=Mami%20robot&amp;submit=Search" title="Mami robot (the page that does not exist)">Mami robot</a>, <a class="new" href="http://tranpedia.selfhow.com/search?q=%E3%83%A2%E3%83%8B%E3%83%A5%E3%82%A8%E3%83%AB&amp;submit=Search" title="モニュエル (the page that does not exist)">モニュエル</a>. I develop many kinds (in the state that a company name of Taiwan was hidden from) very, and (the name of the Taiwanese ind. is in condition to have turned it down), a relatively cheap cleaning robot are mass-produced in the form called the order of the <a href="http://tranpedia.selfhow.com/search?q=OEM&amp;submit=Search" title="OEM">OEM</a> production by the company of all the countries of the world, and the cleaning robot of the Taiwanese company is shipped for all the countries of the world [<sup class="reference" id="cite_ref-13"><a href="http://tranpedia.selfhow.com/search?q=13&amp;submit=Search">13</a></sup>]. For the thing of the Taiwanese well-known company, there is Taiwanese AGAiT (<a href="http://tranpedia.selfhow.com/search?q=ASUS&amp;submit=Search" title="ASUS">ASUS</a> system) "PEGATRON" of Unihan company, too.</p> </div><h2 class="section-heading in-block" onclick="javascript:mfTempOpenSection(3)"><div class="mw-ui-icon mw-ui-icon-element indicator"></div>Robot vacuum cleaner <span></span> <span class="mw-headline" id=".E6.97.A5.E6.9C.AC.E5.B8.82.E5.A0.B4.E3.81.AB.E3.81.8A.E3.81.91.E3.82.8B.E3.83.AD.E3.83.9C.E3.83.83.E3.83.88.E6.8E.83.E9.99.A4.E6.A9.9F">in the Japanese market</span></h2><div class="mf-section-3 collapsible-block" id="mf-section-3"> <p>The Japanese home-appliance maker thought, "the home robot vacuum cleaner cannot anticipate demand from narrow house circumstances", and there was the process that saw off commodification, and the company which had nothing to do with the conventional vacuum cleaner production too much was earnest in the research and development of the robot vacuum cleaner. However, as for the house area of Japan, "the narrowness of Japanese house circumstances" is groundless too much without trading it with the Western European countries including <a class="mw-redirect" href="http://tranpedia.selfhow.com/search?q=U.K.&amp;submit=Search" title="The U.K.">U.K.</a>, <a href="http://tranpedia.selfhow.com/search?q=Germany&amp;submit=Search" title="Germany">Germany</a> too much although it is smaller than the <a class="mw-redirect" href="http://tranpedia.selfhow.com/search?q=United%20States&amp;submit=Search" title="The United States">United States</a>, a continent developed country including <a href="http://tranpedia.selfhow.com/search?q=Canada&amp;submit=Search" title="Canada">Canada</a> [<sup class="reference" id="cite_ref-14"><a href="http://tranpedia.selfhow.com/search?q=14&amp;submit=Search">14</a></sup>]. Besides, in the recent apartment, it becomes the fair wind that becoming it went ahead through the barrier-free or that living came to be taken widely, and the household use robot vacuum cleaner is popular steadily in Japan, and a strategy switch is demanded from each major company.</p> <p>With the robot vacuum cleaner for duties, a rumba of iRobot Corporation grasps a share of approximately 70% in (<a href="http://tranpedia.selfhow.com/search?q=later%20description&amp;submit=Search">later description</a>) of the thing that Fuji Heavy Industries succeeds in the practical use of the world's first office cleaning robot in 2001, the domestic market of the home robot vacuum cleaner as of 2013 [<sup class="reference" id="cite_ref-15"><a href="http://tranpedia.selfhow.com/search?q=15&amp;submit=Search">15</a></sup>].<sup class="reference" id="cite_ref-16"><a href="http://tranpedia.selfhow.com/search?q=%20%5B16%5D&amp;submit=Search"> [16]</a></sup> [<sup class="reference" id="cite_ref-fujiitoshihiko_17-0"><a href="http://tranpedia.selfhow.com/search?q=17&amp;submit=Search">17</a></sup>] that, by the making of new rule for time when send a new robot out in the world, and the robot woke up an anything problem, the Japanese company is the constitution that it is not possible for (unlike an American company) whether why ahead was gone over though the downsizing of the vacuum cleaner, a sensor technology, the technique to automatically run are expertise of the Japanese companies [<sup class="reference" id="cite_ref-fujiitoshihiko_17-1"><a href="http://tranpedia.selfhow.com/search?q=17&amp;submit=Search">17</a></sup>], and is because think, "cannot ensure the security of 100%" [<sup class="reference" id="cite_ref-fujiitoshihiko_17-2"><a href="http://tranpedia.selfhow.com/search?q=17&amp;submit=Search">17</a></sup>]. "I hit the Buddhist altar, and a candle fell down and may become the fire" and the person in charge of the Japanese certain person maker explained it when they said in a specific example [<sup class="reference" id="cite_ref-fujiitoshihiko_17-3"><a href="http://tranpedia.selfhow.com/search?q=17&amp;submit=Search">17</a></sup>]. Toshihiko Fujii analyzes it as follows it is natural to start late when I do such an idea, and why I must not do such a (I run around from a risk earnestly) idea. I say, "there was not an ability that the Japan maker does it until the making of such new social rule and sends a product out in the world" after it "being the right side of the road that it runs, or including it in rule decision whether is the left side to insurance when it begins, and an accident got up when an American company sent the new product called "a car" off in the life, and having built up various rules at the same time, and even the product of the new genre called the cleaning robot being identical as for the need made with such a social structure", and having done it with [<sup class="reference" id="cite_ref-fujiitoshihiko_17-4"><a href="http://tranpedia.selfhow.com/search?q=17&amp;submit=Search">17</a></sup>] [<sup class="reference" id="cite_ref-fujiitoshihiko_17-5"><a href="http://tranpedia.selfhow.com/search?q=17&amp;submit=Search">17</a></sup>]. That, in the corporate culture which I cannot lead including the making of social rule, I start late in global market without it being only that polish (improvement of the details) does the existing product and service that I already (including a rule social in other countries) established that a Japanese maker came over [<sup class="reference" id="cite_ref-fujiitoshihiko_17-6"><a href="http://tranpedia.selfhow.com/search?q=17&amp;submit=Search">17</a></sup>], and it being possible only for the effort about a product and the technique if he analyzes it [<sup class="reference" id="cite_ref-fujiitoshihiko_17-7"><a href="http://tranpedia.selfhow.com/search?q=17&amp;submit=Search">17</a></sup>].</p> <h3 class="in-block">History <span></span> <span class="mw-headline" id=".E6.97.A5.E6.9C.AC.E5.B8.82.E5.A0.B4.E3.81.A7.E3.81.AE.E6.AD.B4.E5.8F.B2">in the Japanese market</span></h3> <p>It releases "<a class="new" href="http://tranpedia.selfhow.com/search?q=Chilean%20Tolly&amp;submit=Search" title="Chilean Tolly (the page that does not exist)">Chilean Tolly</a>" operating the main body which <a href="http://tranpedia.selfhow.com/search?q=Nintendo&amp;submit=Search" title="Nintendo">Nintendo</a> drives by a battery (but not an autonomy type robot as reference information) in 1979 with remote control. It was the concept called the vacuum cleaner which adopted game characteristics, but ended without making a hit.</p> <p><a href="http://tranpedia.selfhow.com/search?q=TOSHIBA&amp;submit=Search" title="TOSHIBA">TOSHIBA</a> began OEM sale of "トリロバイト" of <a href="http://tranpedia.selfhow.com/search?q=Electrolux%20A&amp;submit=Search" title="AB Electrolux">Electrolux A</a>B tied up at the time of from October, 2002 in Japan.</p> <p>Roomba of iRobot was spent from 2004 by the Japanese market [<sup class="reference" id="cite_ref-18"><a href="http://tranpedia.selfhow.com/search?q=18&amp;submit=Search">18</a></sup>]; [<sup class="reference" id="cite_ref-19"><a href="http://tranpedia.selfhow.com/search?q=19&amp;submit=Search">19</a></sup>].</p> <p><a class="new" href="http://tranpedia.selfhow.com/search?q=%E3%83%84%E3%82%AB%E3%83%A2%E3%83%88%E3%82%A8%E3%82%A4%E3%83%A0&amp;submit=Search" title="ツカモトエイム (the page that does not exist)">ツカモトエイム</a> company was specialized in a basic function in November, 2009 and began to sell inexpensive "エコモ AIM-ROBO1" and was sold even to <a href="http://tranpedia.selfhow.com/search?q=Don%20Quixote&amp;submit=Search" title="Don Quixote (company)">Don Quixote</a> of <a href="http://tranpedia.selfhow.com/search?q=Nitori&amp;submit=Search" title="Nitori">Nitori</a> and the discount store which were general merchandising stores such as the furniture.</p> <p>With the thing of other Japanese companies, there is Sun Ruck "I YOU SR-RC01R" アビテラックス "AJC-32J" GAIS "FALTIMA030" "Lisire030" ANABAS "SZ-300" "SZ-200".</p> <p>The country major maker where not only the domestic maker which had nothing to do with vacuum cleaner production too much but also the entry was late for has begun to enter the household use robot vacuum cleaner market till then.</p> <p>Beginning to sell (with the robot vacuum cleaner with the AI function mapping the room with respect with an upswing camera made in Samsun of Korea) OEM for 2,011 years <a class="mw-redirect" href="http://tranpedia.selfhow.com/search?q=TOSHIBA%20home%20APRA%20Ian%27s&amp;submit=Search" title="TOSHIBA home APRA Ian's">TOSHIBA home APRA Ian's</a> company as "<a class="new" href="http://tranpedia.selfhow.com/search?q=%E3%82%B9%E3%83%9E%E3%83%BC%E3%83%9C&amp;submit=Search" title="スマーボ (the page that does not exist)">スマーボ</a>" in Japan.</p> <p>According to the Fuji economy of the research company, the market size in Japan of 2011 reached 9,350 million yen (including the overseas sale of the domestic maker) and was expected when was a little less than 6 times 56 billion yen in 2020 (expectation as of 2011); [<sup class="reference" id="cite_ref-20"><a href="http://tranpedia.selfhow.com/search?q=20&amp;submit=Search">20</a></sup>].</p> <p>As previously mentioned, OEM sold "<a class="new" href="http://tranpedia.selfhow.com/search?q=%E3%82%B9%E3%83%9E%E3%83%BC%E3%83%9C&amp;submit=Search" title="スマーボ (the page that does not exist)">スマーボ</a>" made in Samsun Corporation of Korea to the TOSHIBA home APRA Ian's (I do not sell company manufacture), but started release of the "TORNEO ROBO" (Torneo Robo) of the TOSHIBA company development series from 2014. Including control software or a sensor, the technique of the TOSHIBA group is utilized, and the dust station of the charge dock has an absorption function and absorbs the garbage which collected in the dust box of the main body at every charge. Therefore, that I do not do the garbage disposal for around one month and finish it [<sup class="reference" id="cite_ref-21"><a href="http://tranpedia.selfhow.com/search?q=21&amp;submit=Search">21</a></sup>].</p> <p>Release "<a class="new" href="http://tranpedia.selfhow.com/search?q=RULO&amp;submit=Search" title="RULO (the page that does not exist)">RULO</a>" (Lou Roe) (in spite of being a late-sown seed), and Panasonic enters the robot vacuum cleaner (it did not release the thing which announced the demonstration machine in 2002) as of March, 2015. I am characterized by a triangular shape <a href="http://tranpedia.selfhow.com/search?q=of%20Lou%20Roe&amp;submit=Search" title="Triangle of Lou Roe">of Lou Roe</a> whereas most robot vacuum cleaners are circular.</p> <p><a class="mw-disambig" href="http://tranpedia.selfhow.com/search?q=Hitachi&amp;submit=Search" title="日立">Hitachi</a> releases "minimaru (minimal) RV-DX1" in November, 2016, too (in the form that makes late departure as a major company finally) and enters the market. 直径約25cmと小型であることが&#65288;狭い家屋の日本においては家具の間に入り込めることを意味し&#12289;重要な&#65289;機能でもある&#12289;ということを訴求点にして市場に切り込んだ&#12290;<!--cltimeout:rmax--></p> <h3 class="in-block"><span class="mw-headline" id=".E6.97.A5.E6.9C.AC.E5.B8.82.E5.A0.B4.E3.81.AE.E3.83.AD.E3.83.9C.E3.83.83.E3.83.88.E6.8E.83.E9.99.A4.E6.A9.9F.E4.B8.80.E8.A6.A7.EF.BC.88.E5.AE.B6.E5.BA.AD.E7.94.A8.EF.BC.89">日本市場のロボット掃除機一覧&#65288;家庭用&#65289;</span><span></span><!--cltimeout:rmax--></h3> <ul><li>エレクトロラックス&#65288;スウェーデン系&#65289;<!--cltimeout:rmax--> <ul><li>&#12300;トリロバイト&#12301;(かつて東芝がOEM販売)<!--cltimeout:rmax--></li> </ul></li> <li><a href="http://tranpedia.selfhow.com/search?q=iRobot&amp;submit=Search" title="IRobot">iRobot</a>&#65288;米国系&#65289;<!--cltimeout:rmax--> <ul><li>Roomba&#12300;<a href="http://tranpedia.selfhow.com/search?q=%E3%83%AB%E3%83%B3%E3%83%90&amp;submit=Search" title="ルンバ (掃除機)">ルンバ</a>&#12301;シリーズ&#65288;多数なので別記事で解説&#65289;<!--cltimeout:rmax--></li> </ul></li> <li>CCP&#65288;&#12300;シー&#12539;シー&#12539;ピー&#12301;とも&#12290;<a href="http://tranpedia.selfhow.com/search?q=%E3%83%90%E3%83%B3%E3%83%80%E3%82%A4&amp;submit=Search" title="バンダイ">バンダイ</a>の完全子会社&#65289;<!--cltimeout:rmax--> <ul><li>&#12300;SO-Zi&#12301;<!--cltimeout:rmax--></li> <li>&#12300;ラクリート&#12301;<!--cltimeout:rmax--></li> </ul></li> <li>ANABAS(日系)<!--cltimeout:rmax--> <ul><li>&#12300;SZ-300&#12301;<!--cltimeout:rmax--></li> <li>&#12300;SZ-200&#12301;<!--cltimeout:rmax--></li> </ul></li> <li>GAIS(日系)<!--cltimeout:rmax--> <ul><li>&#12300;FALTIMA030&#12301;<!--cltimeout:rmax--></li> <li>&#12300;Lisire030&#12301;<!--cltimeout:rmax--></li> </ul></li> <li>ツカモトエイム(日系&#12289;総合繊維商社<a class="new" href="http://tranpedia.selfhow.com/search?q=%E3%83%84%E3%82%AB%E3%83%A2%E3%83%88%E3%82%B3%E3%83%BC%E3%83%9D%E3%83%AC%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3&amp;submit=Search" title="ツカモトコーポレーション (存在しないページ)">ツカモトコーポレーション</a><sup class="reference" id="cite_ref-22"><a href="http://tranpedia.selfhow.com/search?q=%5B22%5D&amp;submit=Search">[22]</a></sup>の関連会社)<!--cltimeout:rmax--> <ul><li>&#12300;AIM-ROBO1&#12301;<!--cltimeout:rmax--></li> <li>&#12300;AIM-ROBO2&#12301;<!--cltimeout:rmax--></li> <li>&#12300;AIM-RC01&#12301;<!--cltimeout:rmax--></li> <li>&#12300;AIM-RC02&#12301;<!--cltimeout:rmax--></li> <li>&#12300;AIM-RC03&#12301;<!--cltimeout:rmax--></li> </ul></li> <li><a href="http://tranpedia.selfhow.com/search?q=LG&amp;submit=Search" title="LGエレクトロニクス">LG</a>&#65288;韓国系&#65289;<!--cltimeout:rmax--> <ul><li>&#12300;Roboking&#12301;<!--cltimeout:rmax--></li> <li>&#12300;HOM-BOT2.0&#12301;<!--cltimeout:rmax--></li> </ul></li> <li>AGAiT&#65288;台湾系&#12289;<a href="http://tranpedia.selfhow.com/search?q=ASUS&amp;submit=Search" title="ASUS">ASUS</a>の完全子会社&#65289;&#12300;E-Clean EC01&#12301;<!--cltimeout:rmax--></li> <li>マミロボット&#65288;韓国系&#65289;<!--cltimeout:rmax--> <ul><li>&#12300;ポロK7&#12301;<!--cltimeout:rmax--></li> </ul></li> <li><a href="http://tranpedia.selfhow.com/search?q=%E3%82%B7%E3%83%A3%E3%83%BC%E3%83%97&amp;submit=Search" title="シャープ">シャープ</a><!--cltimeout:rmax--> <ul><li>&#12300;<a href="http://tranpedia.selfhow.com/search?q=%E3%82%B3%E3%82%B3%E3%83%AD%E3%83%9C&amp;submit=Search" title="ココロボ (掃除機)">ココロボ</a>&#12301;<!--cltimeout:rmax--></li> </ul></li> <li><a href="http://tranpedia.selfhow.com/search?q=%E3%83%91%E3%83%8A%E3%82%BD%E3%83%8B%E3%83%83%E3%82%AF&amp;submit=Search" title="パナソニック">パナソニック</a><!--cltimeout:rmax--> <ul><li>&#12300;<a class="new" href="http://tranpedia.selfhow.com/search?q=RULO&amp;submit=Search" title="RULO (存在しないページ)">RULO</a>&#12301;<!--cltimeout:rmax--></li> </ul></li> <li>アビテラックス(日本)<!--cltimeout:rmax--> <ul><li>&#12300;AJC-32J&#12301;<!--cltimeout:rmax--></li> </ul></li> <li>Sun Ruck(日本)<!--cltimeout:rmax--> <ul><li>&#12300;I YOU SR-RC01R&#12301;<!--cltimeout:rmax--></li> </ul></li> <li>エコバックス ロボティクス<!--cltimeout:rmax--> <ul><li>&#12300;DEEBOT&#12301;<!--cltimeout:rmax--></li> </ul></li> <li>TOSHIBA home APRA Ian's <ul><li>&#12300;スマーボ&#12301;(サムスンのOEM)<!--cltimeout:rmax--></li> <li>&#12300;TORNEO ROBO&#12301;<!--cltimeout:rmax--></li> </ul></li> <li>モニュエル&#65288;韓国系&#65289;<!--cltimeout:rmax--> <ul><li>&#12300;クレモン&#12301;<!--cltimeout:rmax--></li> </ul></li> <li>フォアベルク&#65288;<a class="extiw" href="http://tranpedia.selfhow.com/search?q=Vorwerk&amp;submit=Search" title="en:Vorwerk (company)">Vorwerk</a>&#12289;ドイツ系&#65289;<!--cltimeout:rmax--> <ul><li>&#12300;コーボルトVR100&#12301;<!--cltimeout:rmax--></li> </ul></li> <li><a href="http://tranpedia.selfhow.com/search?q=%E3%83%80%E3%82%A4%E3%82%BD%E3%83%B3&amp;submit=Search" title="ダイソン (企業)">ダイソン</a>&#65288;英国系&#65289;<!--cltimeout:rmax--> <ul><li>&#12300;Dyson 360 eye&#12301;<!--cltimeout:rmax--></li> </ul></li> </ul></div><h2 class="section-heading in-block" onclick="javascript:mfTempOpenSection(4)"><div class="mw-ui-icon mw-ui-icon-element indicator"></div><span class="mw-headline" id=".E6.A5.AD.E5.8B.99.E7.94.A8.E5.BA.8A.E6.8E.83.E9.99.A4.E3.83.AD.E3.83.9C.E3.83.83.E3.83.88">業務用床掃除ロボット</span><span></span><!--cltimeout:rmax--></h2><div class="mf-section-4 collapsible-block" id="mf-section-4"> <p>1997年には<a href="http://tranpedia.selfhow.com/search?q=%E3%83%9F%E3%83%8E%E3%83%AB%E3%82%BF&amp;submit=Search" title="ミノルタ">ミノルタ</a>社が病院内での床<a href="http://tranpedia.selfhow.com/search?q=%E6%B6%88%E6%AF%92&amp;submit=Search" title="消毒">消毒</a>作業や<a class="mw-disambig" href="http://tranpedia.selfhow.com/search?q=%E3%83%AF%E3%83%83%E3%82%AF%E3%82%B9&amp;submit=Search" title="ワックス">ワックス</a>掛けを行う&#12300;ロボサニタン&#12301;を発表した<sup class="reference" id="cite_ref-23"><a href="http://tranpedia.selfhow.com/search?q=%5B23%5D&amp;submit=Search">[23]</a></sup>&#12290;家庭用ではなく業務用ロボット清掃機であったが&#12289;平成不況の煽りを受け製品化は中止された&#12290;しかしその技術はベンチャーの<a class="new" href="http://tranpedia.selfhow.com/search?q=%E3%83%95%E3%82%A3%E3%82%B0%E3%83%A9&amp;submit=Search" title="フィグラ (存在しないページ)">フィグラ</a>に引き継がれ&#12289;多目的清掃ロボット&#12300;<a class="new" href="http://tranpedia.selfhow.com/search?q=%E3%83%95%E3%82%A3%E3%82%B0%E3%83%A9%E3%83%BB%E3%82%A2%E3%82%A4&amp;submit=Search" title="フィグラ&#12539;アイ (存在しないページ)">フィグラ&#12539;アイ</a>&#12301;として<a href="http://tranpedia.selfhow.com/search?q=2005%E5%B9%B4%E6%84%9B%E7%9F%A5%E4%B8%87%E5%8D%9A&amp;submit=Search" title="2005年日本国際博覧会">2005年愛知万博</a>に出展し&#12289;2009年に&#12300;<a class="new" href="http://tranpedia.selfhow.com/search?q=%E3%82%A8%E3%83%95%E3%83%AD%E3%83%9C%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3&amp;submit=Search" title="エフロボクリーン (存在しないページ)">エフロボクリーン</a>&#12301;として製品化された<sup class="reference" id="cite_ref-24"><a href="http://tranpedia.selfhow.com/search?q=%5B24%5D&amp;submit=Search">[24]</a></sup>&#12290;<!--cltimeout:rmax--></p> <p>日本市場で最初に製品化されたロボット掃除機&#65288;家庭用含む&#65289;は&#12289;<a href="http://tranpedia.selfhow.com/search?q=%E5%AF%8C%E5%A3%AB%E9%87%8D%E5%B7%A5%E6%A5%AD&amp;submit=Search" title="富士重工業">富士重工業</a>と<a href="http://tranpedia.selfhow.com/search?q=%E4%BD%8F%E5%8F%8B%E5%95%86%E4%BA%8B&amp;submit=Search" title="住友商事">住友商事</a>が2001年4月に実用化に成功した&#12300;ロボットによる清掃システム&#12301;&#65288;業務用&#65289;であり<sup class="reference" id="cite_ref-25"><a href="http://tranpedia.selfhow.com/search?q=%5B25%5D&amp;submit=Search">[25]</a></sup>&#12289;<b>世界初のオフィス清掃ロボット</b>として<a class="mw-redirect" href="http://tranpedia.selfhow.com/search?q=%E6%99%B4%E6%B5%B7%E3%83%88%E3%83%AA%E3%83%88%E3%83%B3%E3%82%B9%E3%82%AF%E3%82%A8%E3%82%A2&amp;submit=Search" title="晴海トリトンスクエア">晴海トリトンスクエア</a>に導入された<sup class="reference" id="cite_ref-26"><a href="http://tranpedia.selfhow.com/search?q=%5B26%5D&amp;submit=Search">[26]</a></sup>&#12290;このロボットは自らが夜間エレベーターを操作&#12539;乗降して清掃するもので&#12289;清掃性能や安全性&#12289;コストメリットが認められ&#12300;今年のロボット大賞2006 経済産業大臣賞&#12301;を受賞している&#12290;又2009年には清掃性能のアップや小型化などを実現し&#12289;中規模程度のビルでもコストメリットが得られる&#12300;オフィスエリア清掃ロボットシステム&#12301;を実用化した<sup class="reference" id="cite_ref-27"><a href="http://tranpedia.selfhow.com/search?q=%5B27%5D&amp;submit=Search">[27]</a></sup>&#12290;<!--cltimeout:rmax--></p> </div><h2 class="section-heading in-block" onclick="javascript:mfTempOpenSection(5)"><div class="mw-ui-icon mw-ui-icon-element indicator"></div><span class="mw-headline" id=".E3.83.97.E3.83.BC.E3.83.AB.E7.94.A8.E3.83.AD.E3.83.9C.E3.83.83.E3.83.88.E6.8E.83.E9.99.A4.E6.A9.9F">プール用ロボット掃除機</span><span></span><!--cltimeout:rmax--></h2><div class="mf-section-5 collapsible-block" id="mf-section-5"> <ul><li>水中やプールサイドの清掃を行うプール用清掃ロボットは&#12289;ランダムに動くものや&#12289;規則的にジグザグ走行するものがある&#12290;日本企業では手動の水中クリーナーで国内シェア1位の<a class="new" href="http://tranpedia.selfhow.com/search?q=%E5%9B%9B%E6%9F%B3&amp;submit=Search" title="四柳 (存在しないページ)">四柳</a>が&#12289;2006年にモータ駆動式全自動プールロボット&#12300;ハイパーロボMRX-06&#12301;を発売し&#12289;その後継機の&#12300;四柳1号&#12301;が製品化に向けて実証実験が行われている<sup class="reference" id="cite_ref-28"><a href="http://tranpedia.selfhow.com/search?q=%5B28%5D&amp;submit=Search">[28]</a></sup>&#12290;<!--cltimeout:rmax--></li> </ul><ul><li>海外企業ではイスラエル製で世界シェア1位&#65288;2011年時点&#65289;のドルフィンが有名で&#12289;1994年には<a class="mw-redirect" href="http://tranpedia.selfhow.com/search?q=JAXA&amp;submit=Search" title="JAXA">JAXA</a>&#65288;宇宙航空研究開発機構&#65289;への納入実績もある&#12290;他に米Pentair社の&#12300;クリーピークラウリー&#12301;&#12289;<a href="http://tranpedia.selfhow.com/search?q=%E4%BB%8F&amp;submit=Search" title="フランス">仏</a>ゾディアック社の&#12300;サイバーノートNT&#12301;&#12289;<a href="http://tranpedia.selfhow.com/search?q=%E3%82%B9%E3%82%A4%E3%82%B9&amp;submit=Search" title="スイス">スイス</a>&#12539;マリナー3S社の&#12300;イエロー&#12301;など数多い&#12290;iRobotは<a class="new" href="http://tranpedia.selfhow.com/search?q=Aqua%20Products%20Group&amp;submit=Search" title="Aqua Products Group (存在しないページ)">Aqua Products Group</a>製のプール清掃ロボットを&#12300;Verro&#12301;としてOEM販売している&#12290;米国ではプールの数が多くその数400万ともいわれており&#12289;プールクリーナーメーカーも30社&#65374;50社近くある<sup class="reference" id="cite_ref-29"><a href="http://tranpedia.selfhow.com/search?q=%5B29%5D&amp;submit=Search">[29]</a></sup>&#12290;<!--cltimeout:rmax--></li> </ul></div><h2 class="section-heading in-block" onclick="javascript:mfTempOpenSection(6)"><div class="mw-ui-icon mw-ui-icon-element indicator"></div><span class="mw-headline" id=".E7.AA.93.E6.8E.83.E9.99.A4.E7.94.A8.E3.83.AD.E3.83.9C.E3.83.83.E3.83.88">窓掃除用ロボット</span><span></span><!--cltimeout:rmax--></h2><div class="mf-section-6 collapsible-block" id="mf-section-6"> <p>窓の上を自動走行して&#12289;汚れなどを清掃する窓清掃用ロボットは&#12289;日本企業では<a class="new" href="http://tranpedia.selfhow.com/search?q=%E6%B5%A6%E4%B8%8A%E6%8A%80%E8%A1%93%E7%A0%94%E7%A9%B6%E6%89%80&amp;submit=Search" title="浦上技術研究所 (存在しないページ)">浦上技術研究所</a>が&#12300;壁面吸着自走式ブラストロボット&#12301;を世界に先がけて開発し&#12289;&#12300;壁面吸着自走式超高圧ウォータジェットロボット&#12301;など&#12289;多数の応用製品を開発している&#12290;製品群名は&#12300;U-ROBOT&#12301;という<sup class="reference" id="cite_ref-30"><a href="http://tranpedia.selfhow.com/search?q=%5B30%5D&amp;submit=Search">[30]</a></sup>&#12290;他に<a href="http://tranpedia.selfhow.com/search?q=%E9%87%91%E6%B2%A2%E5%B7%A5%E6%A5%AD%E5%A4%A7%E5%AD%A6&amp;submit=Search" title="金沢工業大学">金沢工業大学</a>が1998年に開発した窓掃除ロボット&#12289;未来機械社の&#12300;WallWalker&#12301;&#12289;韓国&#12539;Ilshim Global社が出した&#12300;WINDORO&#12301;&#12289;ECOVACS ROBOTICSが出した&#12300;WINBOT&#12301;などがある&#12290;<!--cltimeout:rmax--></p> </div><h2 class="section-heading in-block" onclick="javascript:mfTempOpenSection(7)"><div class="mw-ui-icon mw-ui-icon-element indicator"></div><span class="mw-headline" id=".E5.B9.B4.E8.A1.A8">年表</span><span></span><!--cltimeout:rmax--></h2><div class="mf-section-7 collapsible-block" id="mf-section-7"> <p>1985年に科学博でロボットクリーナーが展示されたのを皮切りに&#12289;90年代は製品化に向けて様々な企業で研究&#12539;開発が続けられ&#12289;2000年代初頭頃から製品化が始まった&#12290;そして2000年代後半頃からより多くの企業が参入し&#12289;現在は熾烈な競争の時代を迎えている&#12290;<!--cltimeout:rmax--></p> <dl><dt>1990年代以前<!--cltimeout:rmax--></dt> </dl><ul><li>1979年 任天堂が電池で駆動する本体をリモコンで操作する&#12300;チリトリー&#12301;を発売&#12290;<!--cltimeout:rmax--></li> <li>1985年 <a class="mw-redirect" href="http://tranpedia.selfhow.com/search?q=%E3%81%A4%E3%81%8F%E3%81%B0%E7%A7%91%E5%AD%A6%E4%B8%87%E5%8D%9A&amp;submit=Search" title="つくば科学万博">つくば科学万博</a>の<a class="mw-disambig" href="http://tranpedia.selfhow.com/search?q=%E8%8A%99%E8%93%89&amp;submit=Search" title="芙蓉">芙蓉</a>ロボットシアターで&#12300;<a class="new" href="http://tranpedia.selfhow.com/search?q=%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%8A%E3%83%BC%E3%82%B7%E3%83%A3%E3%83%BC%E3%82%AF&amp;submit=Search" title="クリーナーシャーク (存在しないページ)">クリーナーシャーク</a>&#12301;展示&#12290;<!--cltimeout:rmax--></li> <li>1997年3月 ミノルタ&#12300;ロボサニタン&#12301;発表&#12290;<!--cltimeout:rmax--></li> <li>1997年 アイロボット&#12300;ルンバ&#12301;の試作機&#12300;early prototype&#12301;発表&#12290;<!--cltimeout:rmax--></li> </ul><dl><dt>2000~2004年<!--cltimeout:rmax--></dt> </dl><ul><li>2001年4月 富士重工業と住友商事 &#12300;ロボットによるビルの清掃システム&#12301;実用化に成功&#12290;晴海トリトンスクエアに導入&#12290;<!--cltimeout:rmax--></li> <li>2001年11月 エレクトロラックス&#12300;トリロバイト&#12301;欧州各国で発売&#12289;日本では2002年10月に東芝がOEM販売&#12290;<!--cltimeout:rmax--></li> <li>2002年3月 パナソニック 試作機発表&#12290;<!--cltimeout:rmax--></li> <li>2002年9月 <a href="http://tranpedia.selfhow.com/search?q=%E3%83%89%E3%82%A4%E3%83%84&amp;submit=Search" title="ドイツ">ドイツ</a>企業<a href="http://tranpedia.selfhow.com/search?q=%E3%82%B1%E3%83%AB%E3%83%92%E3%83%A3%E3%83%BC&amp;submit=Search" title="ケルヒャー">ケルヒャー</a>&#12300;RC3000&#12301;を欧州で発売&#65288;後に<a href="http://tranpedia.selfhow.com/search?q=%E3%82%B7%E3%83%BC%E3%83%A1%E3%83%B3%E3%82%B9&amp;submit=Search" title="シーメンス">シーメンス</a>がOEM販売&#12290;日本未発売&#65289;&#12290;アイロボットも&#12300;ルンバ&#12301;を米国で販売開始&#12290;<!--cltimeout:rmax--></li> <li>2003年5月 日立 試作機発表&#12290;<!--cltimeout:rmax--></li> <li>2004年 アイロボット&#12300;ルンバ&#12301;日本で販売開始&#12290;<!--cltimeout:rmax--></li> </ul><dl><dt>2005~2009年<!--cltimeout:rmax--></dt> </dl><ul><li>2005年5月 フィグラ&#12300;フィグラ&#12539;アイ&#12301;&#65288;現名称エフロボクリーン&#65289;を<a href="http://tranpedia.selfhow.com/search?q=EXPO2005%E6%84%9B%E3%83%BB%E5%9C%B0%E7%90%83%E5%8D%9A&amp;submit=Search" title="2005年日本国際博覧会">EXPO2005愛&#12539;地球博</a>に展示&#12289;2009年製品化&#12290;<!--cltimeout:rmax--></li> <li>2006年 四柳 プール掃除用ロボット&#12300;ハイパーロボMRX-06&#12301;販売開始&#12290;<!--cltimeout:rmax--></li> <li>2007年12月 <a href="http://tranpedia.selfhow.com/search?q=%E3%83%90%E3%83%B3%E3%83%80%E3%82%A4&amp;submit=Search" title="バンダイ">バンダイ</a>子会社<a class="mw-redirect" href="http://tranpedia.selfhow.com/search?q=CCP&amp;submit=Search" title="CCP">CCP</a>&#12300;SO-Zi&#12301;販売開始&#12290;<!--cltimeout:rmax--></li> <li>2008年2月 ANABAS&#65288;日本&#65289;&#12300;SZ-300&#12301;&#12300;SZ-200&#12301;発売&#12290;ロボットクリーナー参入&#12290;<!--cltimeout:rmax--></li> <li>2008年12月 GAIS&#65288;日本&#65289;&#12289;オートコードレスクリーナー&#12300;FALTIMA030&#12301;&#12300;Lisire030&#12301;発売&#12290;<!--cltimeout:rmax--></li> <li>2009年 サムソン&#12300;SR9630&#12301;を日本以外で発売&#12290;<!--cltimeout:rmax--></li> <li>2009年11月 富士重工業と住友商事 &#12300;オフィスエリア清掃ロボットシステム&#12301;実用化&#12290;<!--cltimeout:rmax--></li> <li>2009年10月 フィグラ&#12300;エフロボクリーン&#12301;&#65288;旧名称フィグラ&#12539;アイ&#65289;販売開始&#12290;<!--cltimeout:rmax--></li> <li>2009年11月 ツカモトエイム&#12289;&#12300;エコモ AIM-ROBO1&#12301;など販売開始&#12290;<!--cltimeout:rmax--></li> <li>2009年12月 LG&#12300;Roboking&#12301;販売開始&#12290;<!--cltimeout:rmax--></li> </ul><dl><dt>2010年以降<!--cltimeout:rmax--></dt> </dl><ul><li>2010年6月頃 AGAiT&#65288;台湾ASUS系&#65289;&#12300;E-Clean EC01&#12301;を日本で発売開始&#12290;<!--cltimeout:rmax--></li> <li>2011年6月頃 マミロボット&#12300;ポロK7&#12301;日本で発売開始&#12290;<!--cltimeout:rmax--></li> <li>2011年9月 バンダイ子会社CCP&#12300;ラクリート&#12301;販売開始&#12290;<!--cltimeout:rmax--></li> <li>2011年10月 東芝ホームアプライアンス&#12289;サムスン製ロボット掃除機を&#12300;スマーボ&#12301;としてOEM販売開始&#12290;<!--cltimeout:rmax--></li> <li>2012年3月 LG&#12300;HOM-BOT2.0&#12301;日本で販売開始&#12290;<!--cltimeout:rmax--></li> <li>2012年6月 シャープ&#12300;ココロボ&#12301;2機種発売&#12290;<!--cltimeout:rmax--></li> <li>2012年9月 東芝ホームアプライアンス&#12300;Smarbo V&#65288;スマーボV&#65289;&#12301;を発売&#12290;<!--cltimeout:rmax--></li> <li>2012年9月 アビテラックス&#65288;日本&#65289;&#12300;AJC-32J&#12301;発売&#12290;<!--cltimeout:rmax--></li> <li>2012年9月 Sun Ruck&#65288;日本&#65289;&#12289;&#12300;I YOU SR-RC01R&#12301;発売&#12290;<!--cltimeout:rmax--></li> <li>2012年10月 iRobot&#12289;ルンバ発売10周年で日本専用モデル&#12300;ルンバ630&#12301;発売&#12290;<!--cltimeout:rmax--></li> <li>2012年11月 モニュエル&#65288;韓国&#65289;&#12289;クレモン発売&#12290;<!--cltimeout:rmax--></li> <li>2013年1月 ドイツ国内でシェアトップの<a class="new" href="http://tranpedia.selfhow.com/search?q=%E3%83%95%E3%82%A9%E3%82%A2%E3%83%99%E3%83%AB%E3%82%AF&amp;submit=Search" title="フォアベルク (存在しないページ)">フォアベルク</a>&#65288;独&#65289;&#12300;コーボルトVR100&#12301;日本で本格販売&#12290;<!--cltimeout:rmax--></li> <li>2014年9月 東芝が完全自社開発の&#12300;TORNEO ROBO&#65288;トルネオ ロボ&#65289;&#12301;シリーズ発売&#12290;<!--cltimeout:rmax--></li> <li>2014年11月 ECOVACS ROBOTICSが&#12300;DEEBOT&#65288;ディーボット&#65289;&#12301;シリーズ発売&#12290;<!--cltimeout:rmax--></li> <li>2015年3月 <a href="http://tranpedia.selfhow.com/search?q=%E3%83%91%E3%83%8A%E3%82%BD%E3%83%8B%E3%83%83%E3%82%AF&amp;submit=Search" title="パナソニック">パナソニック</a>が&#65288;形状が三角形の&#65289;&#12300;RULO&#65288;ルーロ&#65289;MC-RS1&#12301;を発売&#12290;<!--cltimeout:rmax--></li> <li>2015年10月 <a href="http://tranpedia.selfhow.com/search?q=%E3%83%80%E3%82%A4%E3%82%BD%E3%83%B3&amp;submit=Search" title="ダイソン (企業)">ダイソン</a>が&#12300;Dyson 360 Eye&#12301;を発売&#12290;<!--cltimeout:rmax--></li> <li>2016年11月 <a class="mw-disambig" href="http://tranpedia.selfhow.com/search?q=%E6%97%A5%E7%AB%8B&amp;submit=Search" title="日立">日立</a>が&#65288;直径約25cmと小型の&#65289;&#12300;minimaru&#65288;ミニマル) RV-DX1&#12301;を発売&#12290;<!--cltimeout:rmax--></li> </ul></div><h2 class="section-heading in-block" onclick="javascript:mfTempOpenSection(8)"><div class="mw-ui-icon mw-ui-icon-element indicator"></div><span class="mw-headline" id=".E3.81.9D.E3.81.AE.E4.BB.96">その他</span><span></span><!--cltimeout:rmax--></h2><div class="mf-section-8 collapsible-block" id="mf-section-8"> <ul><li><a class="mw-redirect" href="http://tranpedia.selfhow.com/search?q=%E3%82%A8%E3%82%A2%E3%82%B3%E3%83%B3&amp;submit=Search" title="エアコン">エアコン</a>のフィルター掃除用に&#12289;内部で移動しながら掃除する装置がある<sup class="reference" id="cite_ref-31"><a href="http://tranpedia.selfhow.com/search?q=%5B31%5D&amp;submit=Search">[31]</a></sup>&#12290;<!--cltimeout:rmax--></li> </ul></div><h2 class="section-heading in-block" onclick="javascript:mfTempOpenSection(9)"><div class="mw-ui-icon mw-ui-icon-element indicator"></div><span class="mw-headline" id=".E5.87.BA.E5.85.B8.E3.83.BB.E8.84.9A.E6.B3.A8">出典&#12539;脚注</span><span></span><!--cltimeout:rmax--></h2><div class="mf-section-9 collapsible-block" id="mf-section-9"> <ol class="references"><li id="cite_note-1"><b><a href="http://tranpedia.selfhow.com/search?q=%5E&amp;submit=Search">^</a></b> <span class="reference-text">しばしば前に&#12300;お&#12301;をつけて&#12300;お掃除ロボット&#12301;とも言う&#12290;</span><!--cltimeout:rmax--></li> <li id="cite_note-2"><b><a href="http://tranpedia.selfhow.com/search?q=%5E&amp;submit=Search">^</a></b> <span class="reference-text">注 - イオングループが自社ブランドで発売した&#12289;格安タイプ&#65288;通常価格数千円&#65289;だけは&#12289;段差を検知せず&#12289;落下する&#12290;</span><!--cltimeout:rmax--></li> <li id="cite_note-3"><b><a href="http://tranpedia.selfhow.com/search?q=%5E&amp;submit=Search">^</a></b> <span class="reference-text">ただし<span class="fix-domain" title="この記述には信頼できる情報源の提示が求められています&#12290;&#65288;2014年6月&#65289;">直径約16.5cm&#65288;6.5インチ&#65289;&#12289;高さ約9cm&#65288;3.5インチ&#65289;という製品もある</span><sup class="noprint Template-Fact">[<i><a href="http://tranpedia.selfhow.com/search?q=%E8%A6%81%E5%87%BA%E5%85%B8&amp;submit=Search" title="Wikipedia:&#12300;要出典&#12301;をクリックされた方へ"><span title="この記述には信頼できる情報源の提示が求められています&#12290;&#65288;2014年6月&#65289;">要出典</span></a></i>]</sup>&#12290;</span><!--cltimeout:rmax--></li> <li id="cite_note-4"><b><a href="http://tranpedia.selfhow.com/search?q=%5E&amp;submit=Search">^</a></b> <span class="reference-text"><a class="external autonumber" href="http://tranpedia.selfhow.com/search?q=%5B1%5D&amp;submit=Search" rel="nofollow">[1]</a></span><!--cltimeout:rmax--></li> <li id="cite_note-5"><b><a href="http://tranpedia.selfhow.com/search?q=%5E&amp;submit=Search">^</a></b> <span class="reference-text">出典&#65306;前川正弘&#12300;掃除ロボット&#12301;&#65288;映像情報メディア学会誌&#12302;映像情報メディア&#12303; 57(1), 83-86, 2003-01-01&#65289;</span><!--cltimeout:rmax--></li> <li id="cite_note-6"><b><a href="http://tranpedia.selfhow.com/search?q=%5E&amp;submit=Search">^</a></b> <span class="reference-text">&#12300;ルンバ 10th Birthday 記念発表会&#12301;<a class="external autonumber" href="http://tranpedia.selfhow.com/search?q=%5B2%5D&amp;submit=Search" rel="nofollow">[2]</a></span><!--cltimeout:rmax--></li> <li id="cite_note-7"><b><a href="http://tranpedia.selfhow.com/search?q=%5E&amp;submit=Search">^</a></b> <span class="reference-text"><a class="external text" href="http://tranpedia.selfhow.com/search?q=Dyson%27s%20Vision%3A%20A%20Robot%20Vacuum%20that%20can%20see&amp;submit=Search" rel="nofollow">Dyson's Vision: A Robot Vacuum that can see</a></span><!--cltimeout:rmax--></li> <li id="cite_note-8"><b><a href="http://tranpedia.selfhow.com/search?q=%5E&amp;submit=Search">^</a></b> <span class="reference-text">パナソニックが掃除ロボ試作機発表<a class="external autonumber" href="http://tranpedia.selfhow.com/search?q=%5B3%5D&amp;submit=Search" rel="nofollow">[3]</a>&#12290;</span><!--cltimeout:rmax--></li> <li id="cite_note-9"><b><a href="http://tranpedia.selfhow.com/search?q=%5E&amp;submit=Search">^</a></b> <span class="reference-text">日立が掃除ロボ試作機発表<a class="external autonumber" href="http://tranpedia.selfhow.com/search?q=%5B4%5D&amp;submit=Search" rel="nofollow">[4]</a>&#12290;</span><!--cltimeout:rmax--></li> <li id="cite_note-10"><b><a href="http://tranpedia.selfhow.com/search?q=%5E&amp;submit=Search">^</a></b> <span class="reference-text"><a class="external text" href="http://tranpedia.selfhow.com/search?q=Robot%20cleaner%20hits%20the%20shops&amp;submit=Search" rel="nofollow">Robot cleaner hits the shops</a></span><!--cltimeout:rmax--></li> <li id="cite_note-11"><b><a href="http://tranpedia.selfhow.com/search?q=%5E&amp;submit=Search">^</a></b> <span class="reference-text"><a class="external text" href="http://tranpedia.selfhow.com/search?q=%E7%B1%B3%E5%9B%BD%E8%A3%BD%E3%80%8C%E3%83%AB%E3%83%B3%E3%83%90%E3%80%8D%E3%81%AB%E6%97%A5%E6%9C%AC%E5%8B%A2%E3%81%8C%E5%8B%9D%E3%81%A6%E3%81%AA%E3%81%84%E3%83%AF%E3%82%B1&amp;submit=Search" rel="nofollow">米国製&#12300;ルンバ&#12301;に日本勢が勝てないワケ</a></span><!--cltimeout:rmax--></li> <li id="cite_note-12"><b><a href="http://tranpedia.selfhow.com/search?q=%5E&amp;submit=Search">^</a></b> <span class="reference-text">&#12300;日経産業新聞&#12301;&#12289;2011年9月25日号</span><!--cltimeout:rmax--></li> <li id="cite_note-13"><b><a href="http://tranpedia.selfhow.com/search?q=%5E&amp;submit=Search">^</a></b> <span class="reference-text">たとえば&#12289;CCPのSO-ZiやツカモトエイムのAIM-ROBO3も&#12289;いずれも台湾での製造品で&#12289;実は両製品は&#12289;ほぼ同一のスペックであり&#12289;ほぼ同一の部品群で作られているのだが&#12289;筐体の外見の一部や製品名だけは変えて&#12289;別の日本企業へとOEM供給されたことで&#12289;あたかも全然異なった製品のように日本市場で販売された&#12290;</span><!--cltimeout:rmax--></li> <li id="cite_note-14"><b><a href="http://tranpedia.selfhow.com/search?q=%5E&amp;submit=Search">^</a></b> <span class="reference-text">住宅産業新聞社&#12300;住宅経済データ集&#12301;によると&#12289;持ち家&#12539;借家合わせた一戸あたり床面積国際比較では日本は95平米であり&#12289;米国&#65288;148平米&#65289;より狭いものの&#12289;フランス&#65288;99平米&#65289;&#12539;ドイツ&#65288;95平米&#65289;&#12539;英国&#65288;87平米&#65289;などとは余り変わらない&#12290;ただし借家に限ると狭い&#12290;</span><!--cltimeout:rmax--></li> <li id="cite_note-15"><b><a href="http://tranpedia.selfhow.com/search?q=%5E&amp;submit=Search">^</a></b> <span class="reference-text"><a class="external text" href="http://tranpedia.selfhow.com/search?q=%E7%B1%B3%E5%9B%BD%E8%A3%BD%E3%80%8C%E3%83%AB%E3%83%B3%E3%83%90%E3%80%8D%E3%81%AB%E6%97%A5%E6%9C%AC%E5%8B%A2%E3%81%8C%E5%8B%9D%E3%81%A6%E3%81%AA%E3%81%84%E3%83%AF%E3%82%B1&amp;submit=Search" rel="nofollow">米国製&#12300;ルンバ&#12301;に日本勢が勝てないワケ</a></span><!--cltimeout:rmax--></li> <li id="cite_note-16"><b><a href="http://tranpedia.selfhow.com/search?q=%5E&amp;submit=Search">^</a></b> <span class="reference-text">注記 - 日本の市場であるにもかかわらず&#12289;また日本のメーカーが得意としていたはずの家電品であるにもかかわらず&#12289;iRobot社が1社で圧倒的なシェアを取ってしまっていて&#12289;残りのシェアを多数社で分け合う形になっており&#12289;日本のメーカー各社も非常に小さなシェアしかとれず苦戦している&#12290;</span><!--cltimeout:rmax--></li> <li id="cite_note-fujiitoshihiko-17">^ <a href="http://tranpedia.selfhow.com/search?q=a&amp;submit=Search"><sup><i><b>a</b></i></sup></a> <a href="http://tranpedia.selfhow.com/search?q=b&amp;submit=Search"><sup><i><b>b</b></i></sup></a> <a href="http://tranpedia.selfhow.com/search?q=c&amp;submit=Search"><sup><i><b>c</b></i></sup></a> <a href="http://tranpedia.selfhow.com/search?q=d&amp;submit=Search"><sup><i><b>d</b></i></sup></a> <a href="http://tranpedia.selfhow.com/search?q=e&amp;submit=Search"><sup><i><b>e</b></i></sup></a> <a href="http://tranpedia.selfhow.com/search?q=f&amp;submit=Search"><sup><i><b>f</b></i></sup></a> <a href="http://tranpedia.selfhow.com/search?q=g&amp;submit=Search"><sup><i><b>g</b></i></sup></a> <a href="http://tranpedia.selfhow.com/search?q=h&amp;submit=Search"><sup><i><b>h</b></i></sup></a> <span class="reference-text">藤井敏彦&#12302;競争戦略としてのグローバルルール: 世界市場で勝つ企業の秘訣&#12303;東洋経済新報社&#12289;2012年&#12300;掃除ロボットに出遅れた理由&#12301;の章&#12290;</span><!--cltimeout:rmax--></li> <li id="cite_note-18"><b><a href="http://tranpedia.selfhow.com/search?q=%5E&amp;submit=Search">^</a></b> <span class="reference-text">2012年度の日本での販売台数は25万台を目指していた&#12290;</span><!--cltimeout:rmax--></li> <li id="cite_note-19"><b><a href="http://tranpedia.selfhow.com/search?q=%5E&amp;submit=Search">^</a></b> <span class="reference-text"><a class="external text" href="http://tranpedia.selfhow.com/search?q=%E3%83%AD%E3%83%9C%E3%83%83%E3%83%88%E6%8E%83%E9%99%A4%E6%A9%9F%E3%80%8C%E3%83%AB%E3%83%B3%E3%83%90%20700%20%E3%82%B7%E3%83%AA%E3%83%BC%E3%82%BA%E3%80%8D%E3%81%8C%E7%99%BB%E5%A0%B4--%E3%82%88%E3%82%8A%E3%81%8F%E3%81%BE%E3%81%AA%E3%81%8F%E6%8E%83%E9%99%A4%E3%81%8C%E5%8F%AF%E8%83%BD%E3%81%AB&amp;submit=Search" rel="nofollow">ロボット掃除機&#12300;ルンバ 700 シリーズ&#12301;が登場--よりくまなく掃除が可能に</a> -cnet japan (2011年9月14日掲載&#12289;2011年9月26日閲覧)</span><!--cltimeout:rmax--></li> <li id="cite_note-20"><b><a href="http://tranpedia.selfhow.com/search?q=%5E&amp;submit=Search">^</a></b> <span class="reference-text">SankeiBiz 8月9日(木)8時15分配信</span><!--cltimeout:rmax--></li> <li id="cite_note-21"><b><a href="http://tranpedia.selfhow.com/search?q=%5E&amp;submit=Search">^</a></b> <span class="reference-text">東芝が"本気"のロボット掃除機 自社開発の&#12300;トルネオ ロボ&#12301;を9月発売へ&#65288;日経トレンディネット 8月25日&#65289;</span><!--cltimeout:rmax--></li> <li id="cite_note-22"><b><a href="http://tranpedia.selfhow.com/search?q=%5E&amp;submit=Search">^</a></b> <span class="reference-text">関連項目としては創業者の&#12300;<a class="mw-disambig" href="http://tranpedia.selfhow.com/search?q=%E5%A1%9A%E6%9C%AC%E5%AE%9A%E5%8F%B3%E8%A1%9B%E9%96%80&amp;submit=Search" title="塚本定右衛門">塚本定右衛門</a>&#12301;がある&#12290;</span><!--cltimeout:rmax--></li> <li id="cite_note-23"><b><a href="http://tranpedia.selfhow.com/search?q=%5E&amp;submit=Search">^</a></b> <span class="reference-text">1997年ミノルタが病院内清掃ロボ&#12300;ロボサニタン&#12301;を発表<a class="external autonumber" href="http://tranpedia.selfhow.com/search?q=%5B5%5D&amp;submit=Search" rel="nofollow">[5]</a>&#12290;</span><!--cltimeout:rmax--></li> <li id="cite_note-24"><b><a href="http://tranpedia.selfhow.com/search?q=%5E&amp;submit=Search">^</a></b> <span class="reference-text">フィグラ社の多目的清掃ロボット&#12300;エフロボクリーン&#12301;&#65288;旧名称フィグラ&#12539;アイ&#65289;<a class="external autonumber" href="http://tranpedia.selfhow.com/search?q=%5B6%5D&amp;submit=Search" rel="nofollow">[6]</a>&#12290;</span><!--cltimeout:rmax--></li> <li id="cite_note-25"><b><a href="http://tranpedia.selfhow.com/search?q=%5E&amp;submit=Search">^</a></b> <span class="reference-text">富士重工業と住友商事が2001年にロボット清掃システム実用化に成功<a class="external autonumber" href="http://tranpedia.selfhow.com/search?q=%5B7%5D&amp;submit=Search" rel="nofollow">[7]</a>&#12290;</span><!--cltimeout:rmax--></li> <li id="cite_note-26"><b><a href="http://tranpedia.selfhow.com/search?q=%5E&amp;submit=Search">^</a></b> <span class="reference-text"><a class="external text" href="http://tranpedia.selfhow.com/search?q=%E6%99%B4%E6%B5%B7%E3%82%A2%E3%82%A4%E3%83%A9%E3%83%B3%E3%83%89%E3%83%88%E3%83%AA%E3%83%88%E3%83%B3%E3%82%B9%E3%82%AF%E3%82%A8%E3%82%A2&amp;submit=Search" rel="nofollow">晴海アイランドトリトンスクエア</a></span><!--cltimeout:rmax--></li> <li id="cite_note-27"><b><a href="http://tranpedia.selfhow.com/search?q=%5E&amp;submit=Search">^</a></b> <span class="reference-text">富士重工&#12300;エレベーター連動ビル清掃ロボットシステム&#12301;<a class="external autonumber" href="http://tranpedia.selfhow.com/search?q=%5B8%5D&amp;submit=Search" rel="nofollow">[8]</a></span><!--cltimeout:rmax--></li> <li id="cite_note-28"><b><a href="http://tranpedia.selfhow.com/search?q=%5E&amp;submit=Search">^</a></b> <span class="reference-text">Jnet21&#12300;プールクリーナー市場を席巻する大阪の下町企業&#12301;<a class="external autonumber" href="http://tranpedia.selfhow.com/search?q=%5B9%5D&amp;submit=Search" rel="nofollow">[9]</a></span><!--cltimeout:rmax--></li> <li id="cite_note-29"><b><a href="http://tranpedia.selfhow.com/search?q=%5E&amp;submit=Search">^</a></b> <span class="reference-text">ロボ&#12539;ステーション&#12300;プールクリーナー市場を席巻する大阪の下町企業&#12316;&#12304;四柳&#12305;&#12301;<a class="external autonumber" href="http://tranpedia.selfhow.com/search?q=%5B10%5D&amp;submit=Search" rel="nofollow">[10]</a>&#65288;2008年8月27日&#65289;</span><!--cltimeout:rmax--></li> <li id="cite_note-30"><b><a href="http://tranpedia.selfhow.com/search?q=%5E&amp;submit=Search">^</a></b> <span class="reference-text">浦上技術研究所<a class="external autonumber" href="http://tranpedia.selfhow.com/search?q=%5B11%5D&amp;submit=Search" rel="nofollow">[11]</a></span><!--cltimeout:rmax--></li> <li id="cite_note-31"><b><a href="http://tranpedia.selfhow.com/search?q=%5E&amp;submit=Search">^</a></b> <span class="reference-text"><a href="http://tranpedia.selfhow.com/search?q=%E3%83%91%E3%83%8A%E3%82%BD%E3%83%8B%E3%83%83%E3%82%AF&amp;submit=Search" title="パナソニック">パナソニック</a>製の一部機種では&#12289;このようなエアコンのフィルター掃除機能を&#12300;フィルターお掃除ロボット&#12301;と呼んでいる&#12290;</span><!--cltimeout:rmax--></li> </ol></div><h2 class="section-heading in-block" onclick="javascript:mfTempOpenSection(10)"><div class="mw-ui-icon mw-ui-icon-element indicator"></div><span class="mw-headline" id=".E5.8F.82.E8.80.83.E6.96.87.E7.8C.AE">参考文献</span><span></span><!--cltimeout:rmax--></h2><div class="mf-section-10 collapsible-block" id="mf-section-10"> <ul><li>前川正弘&#65288;2003&#65289;&#12300;掃除ロボット&#12301;&#65288;映像情報メディア学会誌&#12302;映像情報メディア&#12303; 57(1), 83-86, 2003-01-01&#65289;<a class="external autonumber" href="http://tranpedia.selfhow.com/search?q=%5B12%5D&amp;submit=Search" rel="nofollow">[12]</a><!--cltimeout:rmax--></li> <li>藤井敏彦&#12302;競争戦略としてのグローバルルール: 世界市場で勝つ企業の秘訣&#12303;東洋経済新報社&#12289;2012年&#12290;&#65288;&#12300;掃除ロボットに出遅れた理由&#12301;という章がある&#12290;&#65289;<!--cltimeout:rmax--></li> </ul></div><h2 class="section-heading in-block" onclick="javascript:mfTempOpenSection(11)"><div class="mw-ui-icon mw-ui-icon-element indicator"></div><span class="mw-headline" id=".E9.96.A2.E9.80.A3.E9.A0.85.E7.9B.AE">関連項目</span><span></span><!--cltimeout:rmax--></h2><div class="mf-section-11 collapsible-block" id="mf-section-11"> <ul><li><a href="http://tranpedia.selfhow.com/search?q=%E5%AE%B6%E5%BA%AD%E7%94%A8%E3%83%AD%E3%83%9C%E3%83%83%E3%83%88&amp;submit=Search" title="家庭用ロボット">家庭用ロボット</a><!--cltimeout:rmax--></li> <li><a href="http://tranpedia.selfhow.com/search?q=%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9%E3%83%AD%E3%83%9C%E3%83%83%E3%83%88&amp;submit=Search" title="サービスロボット">サービスロボット</a><!--cltimeout:rmax--></li> <li><a href="http://tranpedia.selfhow.com/search?q=%E3%82%B9%E3%82%AF%E3%83%BC%E3%83%90%20%28%E6%8E%83%E9%99%A4%E6%A9%9F%29&amp;submit=Search" title="スクーバ (掃除機)">スクーバ (掃除機)</a> - "Scooba"は米iROBOT社製の床磨きに特化した掃除用ロボットである&#12290;<!--cltimeout:rmax--></li> </ul></div><h2 class="section-heading in-block" onclick="javascript:mfTempOpenSection(12)"><div class="mw-ui-icon mw-ui-icon-element indicator"></div><span class="mw-headline" id=".E5.A4.96.E9.83.A8.E3.83.AA.E3.83.B3.E3.82.AF">外部リンク</span><span></span><!--cltimeout:rmax--></h2><div class="mf-section-12 collapsible-block" id="mf-section-12"> <ul><li><cite class="citation" style="font-style:normal"><a class="external text" href="http://tranpedia.selfhow.com/search?q=%E3%81%93%E3%82%8C%E3%81%AA%E3%82%89%E8%B2%B7%E3%81%88%E3%82%8B%21%3F%E4%BA%88%E7%AE%97%E5%88%A5%E3%81%8A%E6%8E%83%E9%99%A4%E3%83%AD%E3%83%9C%E3%83%83%E3%83%88&amp;submit=Search" rel="nofollow"><i>これなら買える!?予算別お掃除ロボット</i></a>, All About<span style="display:none;">, <a class="external free" href="http://tranpedia.selfhow.com/search?q=http%3A//allabout.co.jp/family/electronics/closeup/CU20051018A/&amp;submit=Search" rel="nofollow">http://allabout.co.jp/family/electronics/closeup/CU20051018A/</a></span> <span class="reference-accessdate"><span title="">2009年6月6日</span>閲覧&#12290;</span></cite><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=%E3%81%93%E3%82%8C%E3%81%AA%E3%82%89%E8%B2%B7%E3%81%88%E3%82%8B%21%3F%E4%BA%88%E7%AE%97%E5%88%A5%E3%81%8A%E6%8E%83%E9%99%A4%E3%83%AD%E3%83%9C%E3%83%83%E3%83%88&amp;rft.pub=All+About&amp;rft_id=http%3A%2F%2Fallabout.co.jp%2Ffamily%2Felectronics%2Fcloseup%2FCU20051018A%2F&amp;rfr_id=info:sid/ja.wikipedia.org:%E6%8E%83%E9%99%A4%E7%94%A8%E3%83%AD%E3%83%9C%E3%83%83%E3%83%88"><span style="display: none;">&#160;</span></span><!--cltimeout:rmax--></li> </ul></div><noscript><img alt="" height="1" src="https://ja.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1&amp;mobile=1" style="border: none; position: absolute;" title="" width="1"/></noscript></div><div class="printfooter"> &#12300;<a dir="ltr" href="http://tranpedia.selfhow.com/search?q=https%3A//ja.wikipedia.org/w/index.php%3Ftitle%3D%E6%8E%83%E9%99%A4%E7%94%A8%E3%83%AD%E3%83%9C%E3%83%83%E3%83%88%26oldid%3D62672791&amp;submit=Search">https://ja.wikipedia.org/w/index.php?title=掃除用ロボット&amp;oldid=62672791</a>&#12301;から取得<!--cltimeout:rmax--></div> </div>         <p>This article is <a href='https://ja.wikipedia.org/wiki/%E6%8E%83%E9%99%A4%E7%94%A8%E3%83%AD%E3%83%9C%E3%83%83%E3%83%88' target='_blank'>taken from the Japanese Wikipedia  <strong>Robot for the cleaning</strong> </a></p>         <p>This article is distributed by cc-by-sa or GFDL license in accordance <a href='https://en.wikipedia.org/wiki/Wikipedia:Copyrights' target='_blank'>with the provisions of Wikipedia.</a></p>         <p><a href='https://en.wikipedia.org/wiki/Wikipedia:General_disclaimer' target='_blank'>Wikipedia and Tranpedia does not guarantee the accuracy of this document. See our disclaimer for more information.</a></p>         <p>In addition, Tranpedia is simply not responsible for any show is only by translating the writings of foreign licenses that are compatible with CC-BY-SA license information.</p>      <div class='ads_adsense_response'> <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> <ins class="adsbygoogle"      style="display:block"      data-ad-client="ca-pub-8393857339019314"      data-ad-slot="1428352782"      data-ad-format="auto"></ins> <script> (adsbygoogle = window.adsbygoogle || []).push({}); </script> </div> 
+<div style='clear:both;'></div>
+<div class='post-share-buttons'>
+<a class='goog-inline-block share-button sb-email' href='https://www.blogger.com/share-post.g?blogID=2198118529220564780&postID=525622790016538087&target=email' target='_blank' title='이메일로 전송'><span class='share-button-link-text'>이메일로 전송</span></a><a class='goog-inline-block share-button sb-blog' href='https://www.blogger.com/share-post.g?blogID=2198118529220564780&postID=525622790016538087&target=blog' onclick='window.open(this.href, "_blank", "height=270,width=475"); return false;' target='_blank' title='BlogThis!'><span class='share-button-link-text'>BlogThis!</span></a><a class='goog-inline-block share-button sb-twitter' href='https://www.blogger.com/share-post.g?blogID=2198118529220564780&postID=525622790016538087&target=twitter' target='_blank' title='Twitter에서 공유'><span class='share-button-link-text'>Twitter에서 공유</span></a><a class='goog-inline-block share-button sb-facebook' href='https://www.blogger.com/share-post.g?blogID=2198118529220564780&postID=525622790016538087&target=facebook' onclick='window.open(this.href, "_blank", "height=430,width=640"); return false;' target='_blank' title='Facebook에서 공유'><span class='share-button-link-text'>Facebook에서 공유</span></a><div class='goog-inline-block dummy-container'><g:plusone source='blogger:blog:plusone' href='http://tranpedia.selfhow.com/2017/01/robot-for-cleaning.html' size='medium' width='300' annotation='inline'/></div>
+</div>
+<span class='reaction-buttons'>
+</span>
+<div style='clear: both;'></div>
+</div>
+<footer class='entry-meta'>
+Posted on <time class='entry-date'>1/21/2017</time><span> by <span>selfpidia</span></span> | <a href='http://tranpedia.selfhow.com/2017/01/robot-for-cleaning.html#comment-form' onclick=''>No comments</a>
+</footer>
+</article>
+<div style='clear: both;'></div>
+<div class='blog-pager' id='blog-pager'>
+<span id='blog-pager-newer-link'>
+<a class='blog-pager-newer-link' href='http://tranpedia.selfhow.com/2017/01/bloody-battle-of-of-world.html' id='Blog1_blog-pager-newer-link' title='최근 게시물'>최근 게시물</a>
+</span>
+<span id='blog-pager-older-link'>
+<a class='blog-pager-older-link' href='http://tranpedia.selfhow.com/2017/01/may-laugh-is-list-of-regular-performers.html' id='Blog1_blog-pager-older-link' title='이전 게시물'>이전 게시물</a>
+</span>
+<a class='home-link' href='http://tranpedia.selfhow.com/'>홈</a>
+</div>
+<div class='clear'></div>
+<div class='comments' id='comments'>
+<a name='comments'></a>
+<h4>
+0
+개의 댓글:
+        
+</h4>
+<div id='Blog1_comments-block-wrapper'>
+<dl class='avatar-comment-indent' id='comments-block'>
+</dl>
+</div>
+<p class='comment-footer'>
+<div class='comment-form'>
+<a name='comment-form'></a>
+<h4 id='comment-post-message'>댓글 쓰기</h4>
+<p>
+</p>
+<a href='https://www.blogger.com/comment-iframe.g?blogID=2198118529220564780&postID=525622790016538087' id='comment-editor-src'></a>
+<iframe allowtransparency='true' class='blogger-iframe-colorize blogger-comment-from-post' frameborder='0' height='410' id='comment-editor' name='comment-editor' src='' width='100%'></iframe>
+<!--Can't find substitution for tag [post.friendConnectJs]-->
+<script src='https://www.blogger.com/static/v1/jsbin/1565398628-comment_from_post_iframe.js' type='text/javascript'></script>
+<script type='text/javascript'>
+      BLOG_CMT_createIframe('https://www.blogger.com/rpc_relay.html', '0');
+    </script>
+</div>
+</p>
+<div id='backlinks-container'>
+<div id='Blog1_backlinks-container'>
+</div>
+</div>
+</div>
+</div>
+
+        </div></div>
+      
+<!--Can't find substitution for tag [adEnd]-->
+</div>
+<div style='clear: both;'></div>
+<div class='post-feeds'>
+<div class='feed-links'>
+피드 구독하기:
+<a class='feed-link' href='http://tranpedia.selfhow.com/feeds/525622790016538087/comments/default' target='_blank' type='application/atom+xml'>댓글 (Atom)</a>
+</div>
+</div>
+<script type="text/javascript">window.___gcfg = {'lang': 'ko'};</script>
+</div></div>
+</div><!-- #content .site-content -->
+</div><!-- #primary .content-area -->
+<div class='widget-area' id='secondary' role='complementary'>
+<div class='widget widget_search'>
+<form action='/search' id='searchform' method='get' role='search'>
+<label class='assistive-text' for='s'>Search</label>
+<input class='field' id='s' name='q' placeholder='Search' type='text' value=''/>
+<input class='submit' id='searchsubmit' name='submit' type='submit' value='Search'/>
+</form>
+</div>
+<div class='sidebar section' id='sidebartop'><div class='widget HTML' data-version='1' id='HTML1'>
+<h2 class='title'>Recent Posts</h2>
+<div class='widget-content'>
+</div>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='//www.blogger.com/rearrange?blogID=2198118529220564780&widgetType=HTML&widgetId=HTML1&action=editWidget&sectionId=sidebartop' onclick='return _WidgetManager._PopupConfig(document.getElementById("HTML1"));' target='configHTML1' title='수정'>
+<img alt='' height='18' src='https://resources.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div>
+<div class='widget PopularPosts' data-version='1' id='PopularPosts1'>
+<h2>Popular Posts</h2>
+<div class='widget-content popular-posts'>
+<ul>
+<li>
+<div class='item-content'>
+<div class='item-title'><a href='http://tranpedia.selfhow.com/2016/05/blog-post.html'>ナキミソ</a></div>
+<div class='item-snippet'>ナキミソ      There are plural problems with  this article.  Please cooperate with improvement  and the discussion in the notebook page .  The s...</div>
+</div>
+<div style='clear: both;'></div>
+</li>
+<li>
+<div class='item-content'>
+<div class='item-title'><a href='http://tranpedia.selfhow.com/2016/06/blog-post.html'>コッラルメーレ</a></div>
+<div class='item-snippet'>       コッラルメーレ コッラルメーレ Collarmele   Wind farm  (Parco eolico)   Administration  Country   Italy  State   Abruzzo  Prefecture   L&#39;Aquila ...</div>
+</div>
+<div style='clear: both;'></div>
+</li>
+<li>
+<div class='item-content'>
+<div class='item-title'><a href='http://tranpedia.selfhow.com/2016/12/catfight.html'>Catfight</a></div>
+<div class='item-snippet'>      Catfight    References and the source  which I can inspect  are not shown at all, or this article is insufficient. You add the source ...</div>
+</div>
+<div style='clear: both;'></div>
+</li>
+<li>
+<div class='item-content'>
+<div class='item-title'><a href='http://tranpedia.selfhow.com/2016/07/blog-post_69.html'>粘表皮癌</a></div>
+<div class='item-snippet'>       粘表皮癌 One of the organization types  of the malignant tumor ( cancer ) epithelial with 粘表皮癌  ( ねんひょうひがん, mucoepidermoid carcinoma ).  ...</div>
+</div>
+<div style='clear: both;'></div>
+</li>
+<li>
+<div class='item-content'>
+<div class='item-title'><a href='http://tranpedia.selfhow.com/2016/07/blog-post_20.html'>ルファビュリュー</a></div>
+<div class='item-snippet'>       ルファビュリュー ルファビュリュー   I upload an image   Kind  Thoroughbred  Sex  Male  Hair color  Chestnut  The birth  1961  Death  1984  Father  Wi...</div>
+</div>
+<div style='clear: both;'></div>
+</li>
+<li>
+<div class='item-content'>
+<div class='item-title'><a href='http://tranpedia.selfhow.com/2016/07/blog-post_41.html'>オディエタ</a></div>
+<div class='item-snippet'>       オディエタ Odieta     State  &#160; ナバーラ state  Prefecture  &#160; ナバーラ prefecture  Area  24.09 km&#178; [1]  Population  364 (2014 [2] )  Population den...</div>
+</div>
+<div style='clear: both;'></div>
+</li>
+<li>
+<div class='item-content'>
+<div class='item-title'><a href='http://tranpedia.selfhow.com/2016/07/blog-post_66.html'>ピリッピカ</a></div>
+<div class='item-snippet'>       ピリッピカ ピリッピカ  or フィリッピカ  (philippic) means an intense attack speech  to criticize authorized politicians.  Several times of speeches t...</div>
+</div>
+<div style='clear: both;'></div>
+</li>
+<li>
+<div class='item-content'>
+<div class='item-title'><a href='http://tranpedia.selfhow.com/2017/01/blog-post_76.html'>金雲翹</a></div>
+<div class='item-snippet'>      金雲翹  A letter ( CJK unification kanji expansion B ) which I cannot display by some computers and browsers  is included in this item ( ...</div>
+</div>
+<div style='clear: both;'></div>
+</li>
+<li>
+<div class='item-content'>
+<div class='item-title'><a href='http://tranpedia.selfhow.com/2016/07/blog-post_39.html'>児玉恕忠</a></div>
+<div class='item-snippet'>       児玉恕忠 児玉恕忠  (こだまじょちゅう, August 2 2, 1849 ( Kaei era  Jul y 5, 2 ) -1 923 age  ( 19 23) November 29 [1] ) is Choshu  clansman  of the la...</div>
+</div>
+<div style='clear: both;'></div>
+</li>
+<li>
+<div class='item-content'>
+<div class='item-title'><a href='http://tranpedia.selfhow.com/2016/11/stationery-maker.html'>山櫻 (stationery maker)</a></div>
+<div class='item-snippet'>       山櫻 (stationery maker) 株式会社山櫻 YAMAZAKURA CO., LTD.   Kind  Company  Abbreviated designation  やまざくら  The head office location   Japan &#12306;...</div>
+</div>
+<div style='clear: both;'></div>
+</li>
+</ul>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='//www.blogger.com/rearrange?blogID=2198118529220564780&widgetType=PopularPosts&widgetId=PopularPosts1&action=editWidget&sectionId=sidebartop' onclick='return _WidgetManager._PopupConfig(document.getElementById("PopularPosts1"));' target='configPopularPosts1' title='수정'>
+<img alt='' height='18' src='https://resources.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div>
+</div><div class='widget BlogArchive' data-version='1' id='BlogArchive1'>
+<h2>Blog Archive</h2>
+<div class='widget-content'>
+<div id='ArchiveList'>
+<div id='BlogArchive1_ArchiveList'>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://tranpedia.selfhow.com/2018/'>2018</a>
+<span class='post-count' dir='ltr'>(1931)</span>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://tranpedia.selfhow.com/2018/03/'>3월</a>
+<span class='post-count' dir='ltr'>(190)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://tranpedia.selfhow.com/2018/02/'>2월</a>
+<span class='post-count' dir='ltr'>(1344)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://tranpedia.selfhow.com/2018/01/'>1월</a>
+<span class='post-count' dir='ltr'>(397)</span>
+</li>
+</ul>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate expanded'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy toggle-open'>&#9660;&#160;</span>
+</a>
+<a class='post-count-link' href='http://tranpedia.selfhow.com/2017/'>2017</a>
+<span class='post-count' dir='ltr'>(8145)</span>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://tranpedia.selfhow.com/2017/06/'>6월</a>
+<span class='post-count' dir='ltr'>(1289)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://tranpedia.selfhow.com/2017/05/'>5월</a>
+<span class='post-count' dir='ltr'>(1340)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://tranpedia.selfhow.com/2017/04/'>4월</a>
+<span class='post-count' dir='ltr'>(1370)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://tranpedia.selfhow.com/2017/03/'>3월</a>
+<span class='post-count' dir='ltr'>(1426)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://tranpedia.selfhow.com/2017/02/'>2월</a>
+<span class='post-count' dir='ltr'>(1296)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate expanded'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy toggle-open'>&#9660;&#160;</span>
+</a>
+<a class='post-count-link' href='http://tranpedia.selfhow.com/2017/01/'>1월</a>
+<span class='post-count' dir='ltr'>(1424)</span>
+<ul class='posts'>
+<li><a href='http://tranpedia.selfhow.com/2017/01/kazumi-matsuo-track-and-field-athlete.html'>Kazumi Matsuo (track-and-field athlete)</a></li>
+<li><a href='http://tranpedia.selfhow.com/2017/01/multiply.html'>Multiply</a></li>
+<li><a href='http://tranpedia.selfhow.com/2017/01/asteroid_31.html'>あやぱに (asteroid)</a></li>
+<li><a href='http://tranpedia.selfhow.com/2017/01/summer-lover-album.html'>Summer lover (album)</a></li>
+<li><a href='http://tranpedia.selfhow.com/2017/01/see.html'>See; ル 野栄司</a></li>
+<li><a href='http://tranpedia.selfhow.com/2017/01/calyx-shop-tabi-maker.html'>Calyx shop (tabi maker)</a></li>
+<li><a href='http://tranpedia.selfhow.com/2017/01/hosei-ishikawa.html'>Hosei, Ishikawa</a></li>
+<li><a href='http://tranpedia.selfhow.com/2017/01/neo-variety.html'>Neo-variety</a></li>
+<li><a href='http://tranpedia.selfhow.com/2017/01/werner-phone.html'>Werner phone ヘフテン</a></li>
+<li><a href='http://tranpedia.selfhow.com/2017/01/blog-post_188.html'>やべきょうすけ</a></li>
+<li><a href='http://tranpedia.selfhow.com/2017/01/kawagoe-shi-etsu-tachikawa-elementary.html'>Kawagoe-shi Etsu Tachikawa Elementary School</a></li>
+<li><a href='http://tranpedia.selfhow.com/2017/01/the-netherlands-grand-prix-road-race-of_31.html'>The Netherlands grand prix (road race) of 2006</a></li>
+<li><a href='http://tranpedia.selfhow.com/2017/01/tdk-ugo.html'>TDK Ugo</a></li>
+<li><a href='http://tranpedia.selfhow.com/2017/01/see-kawagoe-interchange.html'>See; Kawagoe Interchange</a></li>
+<li><a href='http://tranpedia.selfhow.com/2017/01/alane-morley.html'>Alane Morley</a></li>
+<li><a href='http://tranpedia.selfhow.com/2017/01/slave-dynasty.html'>Slave dynasty</a></li>
+<li><a href='http://tranpedia.selfhow.com/2017/01/tunnel-of-love.html'>Tunnel of the love</a></li>
+<li><a href='http://tranpedia.selfhow.com/2017/01/hades.html'>Hades</a></li>
+<li><a href='http://tranpedia.selfhow.com/2017/01/galapagos-shark.html'>Galapagos shark</a></li>
+<li><a href='http://tranpedia.selfhow.com/2017/01/pole-alan-cox.html'>Pole Alan Cox</a></li>
+<li><a href='http://tranpedia.selfhow.com/2017/01/peace-democracy-development-party.html'>Peace, democracy, development party</a></li>
+<li><a href='http://tranpedia.selfhow.com/2017/01/my-girl-tv-drama-of-2005.html'>My girl (TV drama of 2005)</a></li>
+<li><a href='http://tranpedia.selfhow.com/2017/01/andrea.html'>Andrea サーラ</a></li>
+<li><a href='http://tranpedia.selfhow.com/2017/01/mario.html'>Mario フィリッペスキ</a></li>
+<li><a href='http://tranpedia.selfhow.com/2017/01/takeo-kikkawa.html'>Takeo Kikkawa</a></li>
+<li><a href='http://tranpedia.selfhow.com/2017/01/cross-country-skiing.html'>Cross-country skiing</a></li>
+<li><a href='http://tranpedia.selfhow.com/2017/01/law-and-ethics-dali.html'>Law and ethics (Dali)</a></li>
+<li><a href='http://tranpedia.selfhow.com/2017/01/no-beginning-suitability.html'>No beginning suitability</a></li>
+<li><a href='http://tranpedia.selfhow.com/2017/01/the-third-tokyo-metropolitan-commercial.html'>The third Tokyo Metropolitan commercial high schoo...</a></li>
+<li><a href='http://tranpedia.selfhow.com/2017/01/fumiko-miyazaki.html'>Fumiko Miyazaki</a></li>
+<li><a href='http://tranpedia.selfhow.com/2017/01/rugby-world-cup-2011.html'>Rugby World Cup 2011</a></li>
+<li><a href='http://tranpedia.selfhow.com/2017/01/blog-post_984.html'>キャロリング</a></li>
+<li><a href='http://tranpedia.selfhow.com/2017/01/nationalist-action-party.html'>Nationalist action party</a></li>
+<li><a href='http://tranpedia.selfhow.com/2017/01/king-of-kudara-akinobu.html'>King of Kudara Akinobu</a></li>
+<li><a href='http://tranpedia.selfhow.com/2017/01/kesanori-kurashima.html'>Kesanori Kurashima</a></li>
+<li><a href='http://tranpedia.selfhow.com/2017/01/blog-post_928.html'>紫輝彩丼</a></li>
+<li><a href='http://tranpedia.selfhow.com/2017/01/jurisdiction-of-zambia.html'>Jurisdiction of Zambia</a></li>
+<li><a href='http://tranpedia.selfhow.com/2017/01/black-puma.html'>Black puma</a></li>
+<li><a href='http://tranpedia.selfhow.com/2017/01/eri-hozumi.html'>Eri Hozumi</a></li>
+<li><a href='http://tranpedia.selfhow.com/2017/01/ducati-scrambler.html'>Ducati scrambler</a></li>
+<li><a href='http://tranpedia.selfhow.com/2017/01/shigaraki-interchange.html'>Shigaraki Interchange</a></li>
+<li><a href='http://tranpedia.selfhow.com/2017/01/jeff-ridge-way.html'>Jeff ridge way</a></li>
+<li><a href='http://tranpedia.selfhow.com/2017/01/hachiya.html'>Hachiya</a></li>
+<li><a href='http://tranpedia.selfhow.com/2017/01/early-vote-system.html'>Early vote system</a></li>
+<li><a href='http://tranpedia.selfhow.com/2017/01/yoshihide-mori.html'>Yoshihide Mori</a></li>
+<li><a href='http://tranpedia.selfhow.com/2017/01/koji-ishizaki.html'>Koji Ishizaki</a></li>
+<li><a href='http://tranpedia.selfhow.com/2017/01/the-overland.html'>The Overland</a></li>
+<li><a href='http://tranpedia.selfhow.com/2017/01/hitoshi-minato-saburo-kim.html'>Hitoshi Minato Saburo Kim</a></li>
+<li><a href='http://tranpedia.selfhow.com/2017/01/nozawa-mine.html'>Nozawa mine</a></li>
+<li><a href='http://tranpedia.selfhow.com/2017/01/whale-voice-actor.html'>Whale (voice actor)</a></li>
+<li><a href='http://tranpedia.selfhow.com/2017/01/mutsu-comes-tsutomu.html'>Mutsu comes; Tsutomu</a></li>
+<li><a href='http://tranpedia.selfhow.com/2017/01/former-hiroyuki.html'>Former Hiroyuki</a></li>
+<li><a href='http://tranpedia.selfhow.com/2017/01/fc-zurich.html'>FC Zurich</a></li>
+<li><a href='http://tranpedia.selfhow.com/2017/01/blog-post_618.html'>ネーパ</a></li>
+<li><a href='http://tranpedia.selfhow.com/2017/01/sulfamic-acid.html'>Sulfamic acid</a></li>
+<li><a href='http://tranpedia.selfhow.com/2017/01/driver.html'>Driver</a></li>
+<li><a href='http://tranpedia.selfhow.com/2017/01/big-music.html'>Big music</a></li>
+<li><a href='http://tranpedia.selfhow.com/2017/01/ren-pad.html'>グスティ ニョマン Ren pad</a></li>
+<li><a href='http://tranpedia.selfhow.com/2017/01/ak98.html'>AK98</a></li>
+<li><a href='http://tranpedia.selfhow.com/2017/01/diablo-game.html'>Diablo (game)</a></li>
+<li><a href='http://tranpedia.selfhow.com/2017/01/christianity.html'>Christianity</a></li>
+<li><a href='http://tranpedia.selfhow.com/2017/01/the-house-of-bonesetting.html'>The House of bonesetting</a></li>
+<li><a href='http://tranpedia.selfhow.com/2017/01/munemasa-naganuma.html'>Munemasa Naganuma</a></li>
+<li><a href='http://tranpedia.selfhow.com/2017/01/blog-post_279.html'>藤田紘久</a></li>
+<li><a href='http://tranpedia.selfhow.com/2017/01/gifu-native-chicken.html'>Gifu native chicken</a></li>
+<li><a href='http://tranpedia.selfhow.com/2017/01/duck-well-processed-paper.html'>Duck well processed paper</a></li>
+<li><a href='http://tranpedia.selfhow.com/2017/01/local-administration-division-of-italy.html'>Local administration division of Italy</a></li>
+<li><a href='http://tranpedia.selfhow.com/2017/01/uwa-shimacho.html'>Uwa Shimacho</a></li>
+<li><a href='http://tranpedia.selfhow.com/2017/01/board-of-love-and-slaughter-every-day.html'>Board ... of love and the slaughter every day comp...</a></li>
+<li><a href='http://tranpedia.selfhow.com/2017/01/adolfo.html'>Adolfo ビオイ = カサーレス</a></li>
+<li><a href='http://tranpedia.selfhow.com/2017/01/textbook-adoption.html'>Textbook adoption</a></li>
+<li><a href='http://tranpedia.selfhow.com/2017/01/gabriel-de-cru.html'>Gabriel de cru</a></li>
+<li><a href='http://tranpedia.selfhow.com/2017/01/kiyomi-otaka.html'>Kiyomi Otaka</a></li>
+<li><a href='http://tranpedia.selfhow.com/2017/01/misuzu-firm.html'>Misuzu firm</a></li>
+<li><a href='http://tranpedia.selfhow.com/2017/01/bamboo-grass-island-komeno-pedestrian.html'>Bamboo grass island Komeno pedestrian bridge</a></li>
+<li><a href='http://tranpedia.selfhow.com/2017/01/i-walk-together.html'>I walk together</a></li>
+<li><a href='http://tranpedia.selfhow.com/2017/01/the-kiyoshi-arakawa-maru-ball-guy.html'>The Kiyoshi Arakawa-maru, ball guy</a></li>
+<li><a href='http://tranpedia.selfhow.com/2017/01/rio-platano-biosphere-reserve.html'>Rio Platano Biosphere Reserve</a></li>
+<li><a href='http://tranpedia.selfhow.com/2017/01/motoaki-okuma.html'>Motoaki Okuma</a></li>
+<li><a href='http://tranpedia.selfhow.com/2017/01/macdowell.html'>グレーム MacDowell</a></li>
+<li><a href='http://tranpedia.selfhow.com/2017/01/shiro-hirai.html'>Shiro Hirai</a></li>
+<li><a href='http://tranpedia.selfhow.com/2017/01/four-bedrocks.html'>Four bedrocks</a></li>
+<li><a href='http://tranpedia.selfhow.com/2017/01/alaska-airlines.html'>Alaska Airlines</a></li>
+<li><a href='http://tranpedia.selfhow.com/2017/01/color-of-flower-setsuo.html'>Color of a flower Setsuo</a></li>
+<li><a href='http://tranpedia.selfhow.com/2017/01/jurisdiction-of-vatican.html'>Jurisdiction of Vatican</a></li>
+<li><a href='http://tranpedia.selfhow.com/2017/01/striped-mullet-federation.html'>Striped mullet federation</a></li>
+<li><a href='http://tranpedia.selfhow.com/2017/01/codec.html'>Codec</a></li>
+<li><a href='http://tranpedia.selfhow.com/2017/01/blog-post_121.html'>成粛皇后</a></li>
+<li><a href='http://tranpedia.selfhow.com/2017/01/city-between-river.html'>City between the river</a></li>
+<li><a href='http://tranpedia.selfhow.com/2017/01/ramsey-clark.html'>Ramsey Clark</a></li>
+<li><a href='http://tranpedia.selfhow.com/2017/01/asahi-bus.html'>Asahi bus</a></li>
+<li><a href='http://tranpedia.selfhow.com/2017/01/senriyu-taki-station.html'>Senriyu ヶ Taki Station</a></li>
+<li><a href='http://tranpedia.selfhow.com/2017/01/hirokazu-kawakatsu.html'>Hirokazu Kawakatsu</a></li>
+<li><a href='http://tranpedia.selfhow.com/2017/01/bush.html'>インガ Bush</a></li>
+<li><a href='http://tranpedia.selfhow.com/2017/01/yonezawa-is-free.html'>Yonezawa is free</a></li>
+<li><a href='http://tranpedia.selfhow.com/2017/01/law-about-punishment-of-of-plane.html'>Law about the punishment of 強取等 of the plane</a></li>
+<li><a href='http://tranpedia.selfhow.com/2017/01/blog-post_498.html'>白姫抄</a></li>
+<li><a href='http://tranpedia.selfhow.com/2017/01/blog-post_994.html'>福井市殿下幼小中学校</a></li>
+<li><a href='http://tranpedia.selfhow.com/2017/01/it-is-kosaka-dirt.html'>It is Kosaka dirt</a></li>
+<li><a href='http://tranpedia.selfhow.com/2017/01/selection-senior-high-school-baseball.html'>Selection Senior High School baseball meet (Tokush...</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://tranpedia.selfhow.com/2016/'>2016</a>
+<span class='post-count' dir='ltr'>(7443)</span>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://tranpedia.selfhow.com/2016/12/'>12월</a>
+<span class='post-count' dir='ltr'>(1416)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://tranpedia.selfhow.com/2016/11/'>11월</a>
+<span class='post-count' dir='ltr'>(1394)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://tranpedia.selfhow.com/2016/10/'>10월</a>
+<span class='post-count' dir='ltr'>(840)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://tranpedia.selfhow.com/2016/09/'>9월</a>
+<span class='post-count' dir='ltr'>(696)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://tranpedia.selfhow.com/2016/08/'>8월</a>
+<span class='post-count' dir='ltr'>(718)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://tranpedia.selfhow.com/2016/07/'>7월</a>
+<span class='post-count' dir='ltr'>(721)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://tranpedia.selfhow.com/2016/06/'>6월</a>
+<span class='post-count' dir='ltr'>(705)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://tranpedia.selfhow.com/2016/05/'>5월</a>
+<span class='post-count' dir='ltr'>(726)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://tranpedia.selfhow.com/2016/04/'>4월</a>
+<span class='post-count' dir='ltr'>(227)</span>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='//www.blogger.com/rearrange?blogID=2198118529220564780&widgetType=BlogArchive&widgetId=BlogArchive1&action=editWidget&sectionId=sidebartop' onclick='return _WidgetManager._PopupConfig(document.getElementById("BlogArchive1"));' target='configBlogArchive1' title='수정'>
+<img alt='' height='18' src='https://resources.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div>
+</div><div class='widget Attribution' data-version='1' id='Attribution1'>
+<div class='widget-content' style='text-align: center;'>
+Powered by <a href='https://www.blogger.com' target='_blank'>Blogger</a>.
+</div>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='//www.blogger.com/rearrange?blogID=2198118529220564780&widgetType=Attribution&widgetId=Attribution1&action=editWidget&sectionId=sidebartop' onclick='return _WidgetManager._PopupConfig(document.getElementById("Attribution1"));' target='configAttribution1' title='수정'>
+<img alt='' height='18' src='https://resources.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div><div class='widget Navbar' data-version='1' id='Navbar1'><script type="text/javascript">
+    function setAttributeOnload(object, attribute, val) {
+      if(window.addEventListener) {
+        window.addEventListener('load',
+          function(){ object[attribute] = val; }, false);
+      } else {
+        window.attachEvent('onload', function(){ object[attribute] = val; });
+      }
+    }
+  </script>
+<div id="navbar-iframe-container"></div>
+<script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+<script type="text/javascript">
+      gapi.load("gapi.iframes:gapi.iframes.style.bubble", function() {
+        if (gapi.iframes && gapi.iframes.getContext) {
+          gapi.iframes.getContext().openChild({
+              url: 'https://www.blogger.com/navbar.g?targetBlogID\x3d2198118529220564780\x26blogName\x3dTranPedia\x26publishMode\x3dPUBLISH_MODE_HOSTED\x26navbarType\x3dLIGHT\x26layoutType\x3dLAYOUTS\x26searchRoot\x3dhttp://tranpedia.selfhow.com/search\x26blogLocale\x3dko\x26v\x3d2\x26homepageUrl\x3dhttp://tranpedia.selfhow.com/\x26targetPostID\x3d525622790016538087\x26blogPostOrPageUrl\x3dhttp://tranpedia.selfhow.com/2017/01/robot-for-cleaning.html\x26vt\x3d858612392506834655',
+              where: document.getElementById("navbar-iframe-container"),
+              id: "navbar-iframe"
+          });
+        }
+      });
+    </script><script type="text/javascript">
+(function() {
+var script = document.createElement('script');
+script.type = 'text/javascript';
+script.src = '//pagead2.googlesyndication.com/pagead/js/google_top_exp.js';
+var head = document.getElementsByTagName('head')[0];
+if (head) {
+head.appendChild(script);
+}})();
+</script>
+</div>
+<div class='widget HTML' data-version='1' id='HTML2'>
+<h2 class='title'>Unordered List</h2>
+<div class='widget-content'>
+</div>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='//www.blogger.com/rearrange?blogID=2198118529220564780&widgetType=HTML&widgetId=HTML2&action=editWidget&sectionId=sidebartop' onclick='return _WidgetManager._PopupConfig(document.getElementById("HTML2"));' target='configHTML2' title='수정'>
+<img alt='' height='18' src='https://resources.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div>
+</div>
+</div>
+</div><!-- #main .site-main -->
+<footer class='site-footer' id='colophon' role='contentinfo'>
+<div class='site-info'>
+Copyright &#169; <script type='text/javascript'>var creditsyear = new Date();document.write(creditsyear.getFullYear());</script>
+<a href='http://tranpedia.selfhow.com/'>TranPedia</a> | Powered by <a href='http://www.blogger.com/'>Blogger</a>
+</div><!-- .site-info -->
+<div class='author-credit'>
+Design by <a href='http://www.edwardrjenkins.com' target='_blank'>Edward R. Jenkins</a> | Blogger Template by <a href='http://newbloggerthemes.com' target='_blank' title='Best Blogger Templates'>NewBloggerThemes.com</a>
+</div>
+</footer><!-- #colophon .site-footer -->
+</div><!-- #pagebwrap .hfeed .site -->
+</div><!-- .wrapper -->
+<script type='text/javascript'>
+//<![CDATA[
+
+/**
+ * Handles toggling the main navigation menu for small screens.
+ */
+jQuery( document ).ready( function( $ ) {
+	var $masthead = $( '#masthead' ),
+	    timeout = false;
+
+	$.fn.smallMenu = function() {
+		$masthead.find( '.site-navigation' ).removeClass( 'main-navigation' ).addClass( 'main-small-navigation' );
+		$masthead.find( '.site-navigation h1' ).removeClass( 'assistive-text' ).addClass( 'menu-toggle' );
+
+		$( '.menu-toggle' ).unbind( 'click' ).click( function() {
+			$masthead.find( '.menu' ).toggle();
+			$( this ).toggleClass( 'toggled-on' );
+		} );
+	};
+
+	// Check viewport width on first load.
+	if ( $( window ).width() < 600 )
+		$.fn.smallMenu();
+
+	// Check viewport width when user resizes the browser window.
+	$( window ).resize( function() {
+		var browserWidth = $( window ).width();
+
+		if ( false !== timeout )
+			clearTimeout( timeout );
+
+		timeout = setTimeout( function() {
+			if ( browserWidth < 600 ) {
+				$.fn.smallMenu();
+			} else {
+				$masthead.find( '.site-navigation' ).removeClass( 'main-small-navigation' ).addClass( 'main-navigation' );
+				$masthead.find( '.site-navigation h1' ).removeClass( 'menu-toggle' ).addClass( 'assistive-text' );
+				$masthead.find( '.menu' ).removeAttr( 'style' );
+			}
+		}, 200 );
+	} );
+} );
+
+//]]>
+</script>
+<script src='https://apis.google.com/js/plusone.js' type='text/javascript'></script>
+
+<script type="text/javascript" src="https://www.blogger.com/static/v1/widgets/698371418-widgets.js"></script>
+<script type='text/javascript'>
+window['__wavt'] = 'AOuZoY7jF56y8YLUPVmlAm3MJeQ_-1WWTA:1521424764105';_WidgetManager._Init('//www.blogger.com/rearrange?blogID\x3d2198118529220564780','//tranpedia.selfhow.com/2017/01/robot-for-cleaning.html','2198118529220564780');
+_WidgetManager._SetDataContext([{'name': 'blog', 'data': {'blogId': '2198118529220564780', 'title': 'TranPedia', 'url': 'http://tranpedia.selfhow.com/2017/01/robot-for-cleaning.html', 'canonicalUrl': 'http://tranpedia.selfhow.com/2017/01/robot-for-cleaning.html', 'homepageUrl': 'http://tranpedia.selfhow.com/', 'searchUrl': 'http://tranpedia.selfhow.com/search', 'canonicalHomepageUrl': 'http://tranpedia.selfhow.com/', 'blogspotFaviconUrl': 'http://tranpedia.selfhow.com/favicon.ico', 'bloggerUrl': 'https://www.blogger.com', 'hasCustomDomain': true, 'httpsEnabled': false, 'enabledCommentProfileImages': true, 'gPlusViewType': 'FILTERED_POSTMOD', 'adultContent': false, 'analyticsAccountNumber': 'UA-73889181-10', 'encoding': 'UTF-8', 'locale': 'ko', 'localeUnderscoreDelimited': 'ko', 'languageDirection': 'ltr', 'isPrivate': false, 'isMobile': false, 'isMobileRequest': false, 'mobileClass': '', 'isPrivateBlog': false, 'feedLinks': '\x3clink rel\x3d\x22alternate\x22 type\x3d\x22application/atom+xml\x22 title\x3d\x22TranPedia - Atom\x22 href\x3d\x22http://tranpedia.selfhow.com/feeds/posts/default\x22 /\x3e\n\x3clink rel\x3d\x22alternate\x22 type\x3d\x22application/rss+xml\x22 title\x3d\x22TranPedia - RSS\x22 href\x3d\x22http://tranpedia.selfhow.com/feeds/posts/default?alt\x3drss\x22 /\x3e\n\x3clink rel\x3d\x22service.post\x22 type\x3d\x22application/atom+xml\x22 title\x3d\x22TranPedia - Atom\x22 href\x3d\x22https://www.blogger.com/feeds/2198118529220564780/posts/default\x22 /\x3e\n\n\x3clink rel\x3d\x22alternate\x22 type\x3d\x22application/atom+xml\x22 title\x3d\x22TranPedia - Atom\x22 href\x3d\x22http://tranpedia.selfhow.com/feeds/525622790016538087/comments/default\x22 /\x3e\n', 'meTag': '', 'openIdOpTag': '', 'adsenseHostId': 'ca-host-pub-1556223355139109', 'adsenseHasAds': false, 'view': '', 'dynamicViewsCommentsSrc': '//www.blogblog.com/dynamicviews/4224c15c4e7c9321/js/comments.js', 'dynamicViewsScriptSrc': '//www.blogblog.com/dynamicviews/6724040bb52bb8c9', 'plusOneApiSrc': 'https://apis.google.com/js/plusone.js', 'sharing': {'platforms': [{'name': '공유 링크 만들기', 'key': 'link', 'shareMessage': '공유 링크 만들기', 'target': ''}, {'name': 'Facebook', 'key': 'facebook', 'shareMessage': 'Facebook에 공유', 'target': 'facebook'}, {'name': 'BlogThis!', 'key': 'blogThis', 'shareMessage': 'BlogThis!', 'target': 'blog'}, {'name': 'Twitter', 'key': 'twitter', 'shareMessage': 'Twitter에 공유', 'target': 'twitter'}, {'name': 'Pinterest', 'key': 'pinterest', 'shareMessage': 'Pinterest에 공유', 'target': 'pinterest'}, {'name': 'Google+', 'key': 'googlePlus', 'shareMessage': 'Google+에 공유', 'target': 'googleplus'}, {'name': '이메일', 'key': 'email', 'shareMessage': '이메일', 'target': 'email'}], 'googlePlusShareButtonWidth': 300, 'googlePlusBootstrap': '\x3cscript type\x3d\x22text/javascript\x22\x3ewindow.___gcfg \x3d {\x27lang\x27: \x27ko\x27};\x3c/script\x3e'}, 'hasCustomJumpLinkMessage': false, 'jumpLinkMessage': '자세한 내용 보기', 'pageType': 'item', 'postId': '525622790016538087', 'postImageUrl': 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Roomba3g.jpg/200px-Roomba3g.jpg', 'pageName': 'Robot for the cleaning', 'pageTitle': 'TranPedia: Robot for the cleaning', 'metaDescription': ''}}, {'name': 'features', 'data': {'lazy_images': 'false', 'sharing_get_link_dialog': 'true', 'sharing_native': 'false'}}, {'name': 'messages', 'data': {'edit': '수정', 'linkCopiedToClipboard': '링크를 클립보드에 복사했습니다.', 'ok': '확인', 'postLink': '글 링크'}}, {'name': 'template', 'data': {'name': 'custom', 'localizedName': '사용자 지정', 'isResponsive': false, 'isAlternateRendering': false, 'isCustom': true}}, {'name': 'view', 'data': {'classic': {'name': 'classic', 'url': '?view\x3dclassic'}, 'flipcard': {'name': 'flipcard', 'url': '?view\x3dflipcard'}, 'magazine': {'name': 'magazine', 'url': '?view\x3dmagazine'}, 'mosaic': {'name': 'mosaic', 'url': '?view\x3dmosaic'}, 'sidebar': {'name': 'sidebar', 'url': '?view\x3dsidebar'}, 'snapshot': {'name': 'snapshot', 'url': '?view\x3dsnapshot'}, 'timeslide': {'name': 'timeslide', 'url': '?view\x3dtimeslide'}, 'isMobile': false, 'title': 'Robot for the cleaning', 'description': 'Wikipedia Transation from Japanese To English', 'featuredImage': 'https://lh6.googleusercontent.com/proxy/tJmodkJx709b7s7H4Qanm8wAkGiOIDh6Y9PzJcyGrGHyXy6cCSzx3TcU1GBy5sHW9KIOi2GGZYjXJY_B0gi7guORlBw_jANXe6stV_z3r3amyjinvA9_OWe_PsAfi-qb3UoG__O-eowNK-MuvA', 'url': 'http://tranpedia.selfhow.com/2017/01/robot-for-cleaning.html', 'type': 'item', 'isSingleItem': true, 'isMultipleItems': false, 'isError': false, 'isPage': false, 'isPost': true, 'isHomepage': false, 'isArchive': false, 'isLabelSearch': false, 'postId': 525622790016538087}}]);
+_WidgetManager._RegisterWidget('_HeaderView', new _WidgetInfo('Header1', 'headersec', null, document.getElementById('Header1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_BlogView', new _WidgetInfo('Blog1', 'mainblogsec', null, document.getElementById('Blog1'), {'cmtInteractionsEnabled': false, 'useNgc': false, 'lightboxEnabled': true, 'lightboxModuleUrl': 'https://www.blogger.com/static/v1/jsbin/1532655129-lbx__ko.js', 'lightboxCssUrl': 'https://www.blogger.com/static/v1/v-css/368954415-lightbox_bundle.css'}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML1', 'sidebartop', null, document.getElementById('HTML1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_PopularPostsView', new _WidgetInfo('PopularPosts1', 'sidebartop', null, document.getElementById('PopularPosts1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_BlogArchiveView', new _WidgetInfo('BlogArchive1', 'sidebartop', null, document.getElementById('BlogArchive1'), {'languageDirection': 'ltr', 'loadingMessage': '로드 중\x26hellip;'}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_AttributionView', new _WidgetInfo('Attribution1', 'sidebartop', null, document.getElementById('Attribution1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_NavbarView', new _WidgetInfo('Navbar1', 'sidebartop', null, document.getElementById('Navbar1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML2', 'sidebartop', null, document.getElementById('HTML2'), {}, 'displayModeFull'));
+</script>
+</body>
+</html>
